@@ -1,2 +1,7 @@
-<h1>Contact</h1>
-<a href="/">Home</a>
+<h1 class="title">Contact</h1>
+
+<style>
+  .title {
+    color: var(--main-blue);
+  }
+</style>
