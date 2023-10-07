@@ -1,4 +1,5 @@
 <script>
+  import InstagramIcon from "$lib/components/icons/instagramIcon.svelte";
   import "../app.css";
 </script>
 
@@ -6,8 +7,9 @@
   <div class="navbar-container">
     <div class="navbar-logo">COMPANY LOGO</div>
     <div class="navbar-options">
-      <div class="navbar-options__lang">LANG</div>
-      <div class="navbar-options__social-instagram">INSTA LOGO</div>
+      <a href="https://www.instagram.com/mesa_studio_/" target="_blank">
+        <InstagramIcon />
+      </a>
     </div>
   </div>
 </nav>
@@ -19,19 +21,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 24px 32px;
     height: 100%;
   }
   .navbar-options {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    /* gap: 16px; */
   }
   .navbar {
     position: fixed;
-    height: 70px;
-    background-color: rgb(194, 193, 192);
+    height: 100px;
     width: 100%;
   }
 </style>
