@@ -7,7 +7,7 @@
 <div class="container" style="background-image: url('{homeBackground}');">
   <div class="menu-container">
     <div class="menu-contact">
-      <p class="contact-item">contact with us</p>
+      <p class="contact-item">contact us</p>
       <a class="contact-item contact-mail" href="mailto:hi@mesa-studio.pl">hi@mesa-studio.pl</a>
       <a class="contact-item" href="tel:602502150">+48602502150</a>
     </div>
