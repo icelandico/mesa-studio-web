@@ -12,10 +12,10 @@
       <a class="contact-item" href="tel:602502150">+48602502150</a>
     </div>
     <div class="menu-socials">
-      <a href="https://www.facebook.com/profile.php/?id=100088669205685" target="_blank">
+      <a href="https://www.facebook.com/profile.php/?id=100088669205685" target="_blank" aria-label="Mesa studio Facebook">
         <FacebookIcon />
       </a>
-      <a href="https://www.instagram.com/mesa_studio_/" target="_blank">
+      <a href="https://www.instagram.com/mesa_studio_/" target="_blank" aria-label="Mesa studio Instagram">
         <InstagramIcon />
       </a>
     </div>

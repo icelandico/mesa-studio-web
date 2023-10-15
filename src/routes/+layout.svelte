@@ -3,7 +3,10 @@
   import headerLogo from '$lib/assets/logo_header.png';
 
   import "../app.css";
+	import Head from "$lib/components/head.svelte";
 </script>
+
+<Head />
 
 <nav class="navbar">
   <div class="navbar-container">
