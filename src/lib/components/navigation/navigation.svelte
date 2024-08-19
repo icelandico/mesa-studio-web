@@ -43,6 +43,7 @@
 			activeSection = 'projects';
 			return;
 		}
+		activeSection = '';
 	}
 
 	onMount(() => {
