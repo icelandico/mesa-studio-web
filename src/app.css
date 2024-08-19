@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-a, p {
-  font-family: 'Segoe UI Light'
+a,
+p {
+	font-family: 'Segoe UI Light';
 }
