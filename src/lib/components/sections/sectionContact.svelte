@@ -1,3 +1,8 @@
+<script>
+	import InstagramIcon from '$lib/components/icons/instagramIcon.svelte';
+	import FacebookIcon from '$lib/components/icons/facebookIcon.svelte';
+</script>
+
 <div
 	class="flex flex-col md:flex-row items-center md:justify-between p-2 md:p-8 h-full w-full gap-8 md:gap-16 text-primaryBlue"
 >
@@ -9,9 +14,15 @@
 				<a href="tel:799 203 520">tel: 799 203 520</a>
 			</div>
 			<div class="flex flex-col basis-1/2">
-				<a href="https://www.instagram.com/mesa_studio_/" target="_blank">mesa_studio_</a>
-				<a href="https://www.facebook.com/people/mesa-studio/100088669205685/" target="_blank"
-					>mesa studio</a
+				<a
+					class="flex items-center gap-2"
+					href="https://www.instagram.com/mesa_studio_/"
+					target="_blank"><InstagramIcon width={15} height={15} />mesa_studio_</a
+				>
+				<a
+					class="flex items-center gap-2"
+					href="https://www.facebook.com/people/mesa-studio/100088669205685/"
+					target="_blank"><FacebookIcon width={15} height={15} />mesa studio</a
 				>
 			</div>
 		</div>
@@ -40,6 +51,7 @@
 				<label class="text-primaryBlue" for="phone">Pomocy przy jakim wnętrzu potrzebujesz?</label>
 				<textarea class="border-lightBlue border-2 mt-2 px-2 pt-2" id="description" rows="4" />
 			</div>
+			<button type="submit" class="p-2 bg-lightBlue text-white">Wyślij</button>
 		</form>
 	</div>
 </div>
