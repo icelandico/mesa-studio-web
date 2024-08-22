@@ -28,7 +28,7 @@
 		</div>
 	</div>
 	<div class="md:basis-1/2">
-		<form name="contact" class="flex flex-col gap-4" netlify>
+		<form name="contact" class="flex flex-col gap-4" data-netlify="true" method="POST">
 			<div class="flex flex-col">
 				<label class="text-primaryBlue" for="name">Imię i nazwisko</label>
 				<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="text" id="name" />
