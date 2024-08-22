@@ -1,5 +1,5 @@
 <script>
-	import headerLogo from '$lib/assets/logo_header.png';
+	export const prerender = true;
 
 	import '../app.css';
 	import Head from '$lib/components/head.svelte';
