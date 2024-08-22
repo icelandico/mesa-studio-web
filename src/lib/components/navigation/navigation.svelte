@@ -58,28 +58,28 @@
 <header class="fixed w-full z-10">
 	<nav>
 		<ul
-			class="h-[80px] flex bg-white justify-center items-center border border-2 border-gray-500 p-6 text-xl text-light text-primaryBlue"
+			class="h-[80px] flex bg-white justify-center items-center p-8 text-xl text-light text-primaryBlue"
 		>
 			<li class="flex-1">
 				<a
-					class="cursor-pointer {activeSection === 'studio' ? 'active' : ''}"
+					class="inline-block {activeSection === 'studio' ? 'active' : ''}"
 					href="#studio"
 					on:click|preventDefault={scrollIntoView}>studio</a
 				>
 			</li>
 			<li class=" flex-1">
 				<a
-					class="cursor-pointer {activeSection === 'projects' ? 'active' : ''}"
+					class="inline-block {activeSection === 'projects' ? 'active' : ''}"
 					href="#projects"
 					on:click|preventDefault={scrollIntoView}>projekty</a
 				>
 			</li>
-			<li class="cursor-pointer flex justify-center basis-6/12">
+			<li class="inline-block cursor-pointer flex justify-center basis-6/12">
 				<p>LOGO</p>
 			</li>
-			<li class="cursor-pointer flex-1 text-right">
+			<li class="flex-1 text-right">
 				<a
-					class="cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
+					class="inline-block cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
 					href="#contact"
 					on:click|preventDefault={scrollIntoView}>kontakt</a
 				>
@@ -90,7 +90,19 @@
 </header>
 
 <style>
-	.active {
-		border-bottom: 3px solid red;
+	a {
+		position: relative;
+	}
+
+	a.active::after {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		content: '~';
+		display: block;
+		text-align: center;
+		margin-top: -15px;
+		font-size: 58px;
+		color: currentColor;
 	}
 </style>
