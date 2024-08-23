@@ -1,3 +1,8 @@
+<script lang="ts">
+	export let subtitle: string;
+	export let photo: string;
+</script>
+
 <div class="flex items-center justify-between p-8 h-full gap-16">
 	<div class="basis-2/4">
 		<p class="text-primaryBlue text-[40px] text-left">
@@ -12,12 +17,10 @@
 			Sztuk Pięknych w Gdańsku
 		</p>
 		<p class="text-primaryBlue text-2xl mt-16">
-			Tworzymy indywidualne wnętrza, dopasowane do potrzeb klientów. Zależy nam na stworzeniu
-			przestrzeni, która będzie dawała radość osobom z niej korzystającym. Kreujemy niebanalne,
-			interesujące przestrzenie oddziałujące na odbiorcę.
+			{subtitle}
 		</p>
 	</div>
 	<div class="basis-1/4 h-full">
-		<div class="h-full border border-2 border-red-400" />
+		<img class="h-full" alt="Mesa studio team" src={photo} />
 	</div>
 </div>

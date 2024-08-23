@@ -18,7 +18,7 @@
 
 	function setActiveSection(scrollValue: number) {
 		const scrollTopValue = scrollValue + 80;
-		console.log('Scroll', scrollValue);
+
 		if (
 			sectionStudio &&
 			scrollTopValue >= sectionStudio.top &&
@@ -101,7 +101,7 @@
 		content: '~';
 		display: block;
 		text-align: center;
-		margin-top: -15px;
+		margin-top: -7px;
 		font-size: 58px;
 		color: currentColor;
 	}

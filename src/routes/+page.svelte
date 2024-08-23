@@ -3,12 +3,11 @@
 	import SectionStudio from '$lib/components/sections/sectionStudio.svelte';
 	let element: Element;
 	let clientHeight: number;
+	export let data;
+	const indexData = data.homePageData[0];
 </script>
 
-<section
-	id="home"
-	class="box-border pt-[80px] h-screen flex items-center justify-center"
->
+<section id="home" class="box-border pt-[80px] h-screen flex items-center justify-center">
 	HOME
 </section>
 <section
@@ -17,7 +16,7 @@
 	bind:clientHeight
 	class="box-border pt-[80px] h-screen flex items-center justify-center"
 >
-	<SectionStudio />
+	<SectionStudio subtitle={indexData.studioSubtitle} photo={indexData.studioImage} />
 </section>
 <section
 	id="projects"

@@ -16,7 +16,7 @@ show_preview_links: true
 collections:
   - label: 'Sekcje'
     name: 'sections'
-    fields:
+    files:
       - label: 'Home Sekcje'
         name: 'homeSections'
         file: 'src/lib/content/sections/index.md'
