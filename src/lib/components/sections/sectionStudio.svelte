@@ -3,7 +3,7 @@
 	export let photo: string;
 </script>
 
-<div class="flex items-center justify-between p-8 h-full gap-16">
+<div class="flex items-center justify-between p-12 h-full gap-16">
 	<div class="basis-2/4">
 		<p class="text-primaryBlue text-[40px] text-left">
 			<span>Marianna Matuszewska</span>

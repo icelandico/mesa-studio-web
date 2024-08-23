@@ -58,7 +58,7 @@
 <header class="fixed w-full z-10">
 	<nav>
 		<ul
-			class="h-[80px] flex bg-white justify-center items-center p-8 text-xl text-light text-primaryBlue"
+			class="h-[80px] flex bg-white justify-center items-center px-12 text-xl text-light text-primaryBlue"
 		>
 			<li class="flex-1">
 				<a

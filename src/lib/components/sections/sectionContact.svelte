@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="flex flex-col md:flex-row items-center md:justify-between p-2 md:p-8 h-full w-full gap-8 md:gap-16 text-primaryBlue"
+	class="flex flex-col md:flex-row items-center md:justify-between p-2 md:p-12 h-full w-full gap-8 md:gap-16 text-primaryBlue"
 >
 	<div class="md:basis-1/3">
 		<p class="text-primaryBlue text-[40px] text-left">Skontaktuj się z nami:</p>

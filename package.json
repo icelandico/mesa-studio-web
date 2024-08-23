@@ -38,6 +38,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"decap-cms-app": "^3.3.2"
+		"decap-cms-app": "^3.3.2",
+		"embla-carousel": "^8.2.0",
+		"embla-carousel-svelte": "^8.2.0"
 	}
 }
