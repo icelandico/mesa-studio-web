@@ -14,19 +14,19 @@ public_folder: /assets
 show_preview_links: true
 
 collections:
-  - label: 'Sections'
+  - label: 'Sekcje'
     name: 'sections'
-    files:
-      - label: 'Studio section'
-        name: 'studio'
+    fields:
+      - label: 'Home Sekcje'
+        name: 'homeSections'
         file: 'src/lib/content/sections/index.md'
         fields:
-          - { label: Subtitle, name: studioSubtitle, widget: string }
-          - { label: Image, name: studioImage, widget: image }
-  - name: HomeGallery
-    label: 'Home gallery'
-    folder: 'src/lib/content/sectionHome/index.md'
-    widget: list
-    fields:
-      - { name: image, label: Image, widget: image }
-      - { name: alt, label: Alt, widget: string }
+          - { label: 'Studio podtytul', name: studioSubtitle, widget: string }
+          - { label: 'Studio zdjecie', name: studioImage, widget: image }
+          - {
+              name: gallery,
+              label: 'Home galeria'
+              widget: image,
+              choose_url: true,
+              media_library: { config: { multiple: true, max_files: 10 } }
+            }
