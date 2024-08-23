@@ -2,7 +2,6 @@
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import type { EmblaCarouselType } from 'embla-carousel';
 	let emblaApi: EmblaCarouselType;
-	let options = { loop: false };
 	export let galleryPhotos;
 
 	function onInit(event: CustomEvent<EmblaCarouselType>) {
