@@ -36,20 +36,37 @@
 			<div class="flex justify-between gap-4">
 				<div class="flex flex-col w-full">
 					<label class="text-primaryBlue" for="email">Adres e-mail</label>
-					<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="text" id="email" />
+					<input
+						class="border-lightBlue border-2 mt-2 h-10 px-2"
+						type="text"
+						id="email"
+						name="email"
+					/>
 				</div>
 				<div class="flex flex-col w-full">
 					<label class="text-primaryBlue" for="phone">Nr telefonu</label>
-					<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="text" id="phone" />
+					<input
+						class="border-lightBlue border-2 mt-2 h-10 px-2"
+						type="text"
+						id="phone"
+						name="phone"
+					/>
 				</div>
 			</div>
-			<div class="flex flex-col">
+			<!-- <div class="flex flex-col">
 				<label class="text-primaryBlue" for="phone">Możesz przesłać zrzut</label>
-				<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="file" id="phone" />
-			</div>
+				<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="file" id="phone" name="phone"/>
+			</div> -->
 			<div class="flex flex-col">
-				<label class="text-primaryBlue" for="phone">Pomocy przy jakim wnętrzu potrzebujesz?</label>
-				<textarea class="border-lightBlue border-2 mt-2 px-2 pt-2" id="description" rows="4" />
+				<label class="text-primaryBlue" for="description"
+					>Pomocy przy jakim wnętrzu potrzebujesz?</label
+				>
+				<textarea
+					class="border-lightBlue border-2 mt-2 px-2 pt-2"
+					id="description"
+					name="description"
+					rows="4"
+				/>
 			</div>
 			<button type="submit" class="p-2 bg-lightBlue text-white">Wyślij</button>
 		</form>
