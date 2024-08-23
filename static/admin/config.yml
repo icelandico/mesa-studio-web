@@ -25,8 +25,8 @@ collections:
           - { label: 'Studio zdjecie', name: studioImage, widget: image }
           - {
               name: gallery,
-              label: 'Home galeria'
-              widget: image
+              label: 'Home galeria',
+              widget: image,
               choose_url: true,
               media_library: { config: { multiple: true, max_files: 10 } }
             }
