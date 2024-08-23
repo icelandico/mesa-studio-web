@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: icelandico/mesa-page
+  repo: icelandico/mesa-studio-web
   branch: redesign
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
