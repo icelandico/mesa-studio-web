@@ -26,7 +26,7 @@ collections:
           - {
               name: gallery,
               label: 'Home galeria'
-              widget: image,
+              widget: image
               choose_url: true,
               media_library: { config: { multiple: true, max_files: 10 } }
             }
