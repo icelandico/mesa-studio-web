@@ -7,7 +7,7 @@
 
 <section
 	id="home"
-	class="box-border pt-[80px] h-screen bg-gray-100 border-8 border-sky-600 flex items-center justify-center"
+	class="box-border pt-[80px] h-screen flex items-center justify-center"
 >
 	HOME
 </section>
