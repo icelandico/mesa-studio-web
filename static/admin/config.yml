@@ -23,3 +23,13 @@ collections:
         fields:
           - { label: Subtitle, name: studioSubtitle, widget: string }
           - { label: Image, name: studioImage, widget: image }
+  - name: HomeGallery
+    label: HomeGallery
+    widget: list
+    files:
+      - label: 'sectionGallery'
+        name: 'sectionGallery'
+        file: 'src/lib/content/sectionHome/index.md'
+        fields:
+          - { name: image, label: Image, widget: image }
+          - { name: alt, label: Alt, widget: string }
