@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="flex flex-col md:flex-row items-center md:justify-between p-2 md:p-12 h-full w-full gap-8 md:gap-16 text-primaryBlue"
+	class="flex flex-col md:flex-row items-center md:justify-between h-full w-full pb-8 md:pb-0 gap-8 md:gap-16 text-primaryBlue"
 >
 	<div class="md:basis-1/3">
 		<p class="text-primaryBlue text-[40px] text-left">Skontaktuj się z nami:</p>
@@ -27,13 +27,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="md:basis-1/2">
+	<div class="md:basis-1/2 w-full">
 		<form name="contact" class="flex flex-col gap-4" data-netlify="true" method="POST">
 			<div class="flex flex-col">
 				<label class="text-primaryBlue" for="name">Imię i nazwisko</label>
 				<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="text" id="name" name="name" />
 			</div>
-			<div class="flex justify-between gap-4">
+			<div class="flex flex-col md:flex-row justify-between gap-4 w-full">
 				<div class="flex flex-col w-full">
 					<label class="text-primaryBlue" for="email">Adres e-mail</label>
 					<input
@@ -53,10 +53,6 @@
 					/>
 				</div>
 			</div>
-			<!-- <div class="flex flex-col">
-				<label class="text-primaryBlue" for="phone">Możesz przesłać zrzut</label>
-				<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="file" id="phone" name="phone"/>
-			</div> -->
 			<div class="flex flex-col">
 				<label class="text-primaryBlue" for="description"
 					>Pomocy przy jakim wnętrzu potrzebujesz?</label

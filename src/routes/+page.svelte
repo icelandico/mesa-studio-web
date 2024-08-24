@@ -8,23 +8,29 @@
 	const indexData = data.homePageData[0];
 </script>
 
-<section id="home" class="box-border pt-[80px] h-screen flex items-center justify-center">
+<section
+	id="home"
+	class="box-border px-4 md:px-12 pt-[80px] md:h-screen flex items-center justify-center"
+>
 	<SectionGallery galleryPhotos={indexData.gallery} />
 </section>
 <section
 	id="studio"
 	bind:this={element}
 	bind:clientHeight
-	class="box-border pt-[80px] h-screen flex items-center justify-center"
+	class="box-border px-4 md:px-12 mt-[80px] md:pt-[80px] md:h-screen flex items-center justify-center"
 >
 	<SectionStudio subtitle={indexData.studioSubtitle} photo={indexData.studioImage} />
 </section>
 <section
 	id="projects"
-	class="box-border pt-[80px] h-screen bg-gray-300 border-8 border-indigo-400 flex items-center justify-center"
+	class="box-border px-4 md:px-12 pt-[80px] md:h-screen border-4 border-indigo-400 flex items-center justify-center"
 >
 	PROJECTS
 </section>
-<section id="contact" class="box-border pt-[80px] h-screen flex items-center justify-center">
+<section
+	id="contact"
+	class="box-border px-4 md:px-12 pt-[80px] md:h-screen flex items-center justify-center"
+>
 	<SectionContact />
 </section>
