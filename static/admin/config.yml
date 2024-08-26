@@ -33,10 +33,11 @@ collections:
   - label: 'Projekty'
     name: 'projects'
     create: true
+    folder: 'src/lib/content/projects'
+    slug: '{{project}}'
     files:
       - label: 'Strona Projekty'
         name: 'homeSections'
-        file: 'src/lib/content/projects/index.md'
         fields:
           - { label: 'Projekt tytul', name: projectTitle, widget: string }
           - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
