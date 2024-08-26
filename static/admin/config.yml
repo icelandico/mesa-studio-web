@@ -46,6 +46,5 @@ collections:
               widget: image,
               choose_url: true,
               media_library: { config: { multiple: true, max_files: 10 } }
-            },
+            }
           - { label: 'Opis', name: projectDescription, widget: markdown }
-
