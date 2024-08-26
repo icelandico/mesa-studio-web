@@ -34,9 +34,9 @@ collections:
     name: 'projects',
     create: true,
     files:
-      - label: 'Strona Projekty',
-        name: 'homeSections',
-        file: 'src/lib/content/projects/index.md',
+      - label: 'Strona Projekty'
+        name: 'homeSections'
+        file: 'src/lib/content/projects/index.md'
         fields:
           - { label: 'Projekt tytul', name: projectTitle, widget: string }
           - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
