@@ -10,5 +10,6 @@ projectDescription: Luctus semper semper euismod class cursus. Adipiscing
   convallis nullam curae facilisi. Quam cursus nibh risus; consequat quisque
   ridiculus dictum. Commodo praesent sapien, dolor ridiculus iaculis luctus nunc
   semper dictum. Eu eget penatibus taciti cursus himenaeos sed arcu praesent.
-  Fringilla egestas iaculis diam adipiscing nullam nunc purus. Consectetur c
+  Fringilla egestas iaculis diam adipiscing nullam nunc purus. Consectetur
+  ceasear.
 ---
