@@ -34,7 +34,7 @@ collections:
     name: 'projects',
     create: true,
     files:
-      - label: 'Strona Projekty'
+      - label: 'Strona Projekty',
         name: 'homeSections'
         file: 'src/lib/content/projects/index.md',
         fields:
