@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SectionContact from '$lib/components/sections/sectionContact.svelte';
 	import SectionGallery from '$lib/components/sections/sectionGallery.svelte';
+	import SectionProjects from '$lib/components/sections/sectionProjects.svelte';
 	import SectionStudio from '$lib/components/sections/sectionStudio.svelte';
 	let element: Element;
 	let clientHeight: number;
@@ -22,11 +23,8 @@
 >
 	<SectionStudio subtitle={indexData.studioSubtitle} photo={indexData.studioImage} />
 </section>
-<section
-	id="projects"
-	class="box-border px-4 md:px-12 pt-[80px] md:h-screen border-4 border-indigo-400 flex items-center justify-center"
->
-	PROJECTS
+<section id="projects" class="box-border px-4 md:px-12 pt-[80px] border-4 border-indigo-400">
+	<SectionProjects />
 </section>
 <section
 	id="contact"
