@@ -1,5 +1,4 @@
 ---
-projectTitle: Strzyża 1
 title: Strzyża
 projectMainImg: /assets/3.jpg
 gallery:

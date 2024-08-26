@@ -7,6 +7,9 @@
 	let clientHeight: number;
 	export let data;
 	const indexData = data.homePageData[0];
+	const projectsData = data.projectsPageData;
+
+	console.log('proj', projectsData);
 </script>
 
 <section
@@ -23,8 +26,8 @@
 >
 	<SectionStudio subtitle={indexData.studioSubtitle} photo={indexData.studioImage} />
 </section>
-<section id="projects" class="box-border px-4 md:px-12 pt-[80px] border-4 border-indigo-400">
-	<SectionProjects />
+<section id="projects" class="box-border px-4 md:px-12 pt-[80px]">
+	<SectionProjects projects={projectsData} />
 </section>
 <section
 	id="contact"

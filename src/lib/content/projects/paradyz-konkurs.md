@@ -1,5 +1,4 @@
 ---
-projectTitle: Paradyż-Konkurs
 title: Paraduż-Test-Slug
 projectMainImg: /assets/paradyz_1.jpg
 gallery:
