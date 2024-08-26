@@ -30,9 +30,9 @@ collections:
               choose_url: true,
               media_library: { config: { multiple: true, max_files: 10 } }
             }
-  - label: 'Projekty',
-    name: 'projects',
-    create: true,
+  - label: 'Projekty'
+    name: 'projects'
+    create: true
     files:
       - label: 'Strona Projekty'
         name: 'homeSections'
