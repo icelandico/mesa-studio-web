@@ -34,7 +34,7 @@ collections:
     name: 'projects'
     create: true
     folder: 'src/lib/content/projects'
-    slug: '"{{year}}-{{month}}-{{day}}-{{fields.title}}"'
+    slug: '"{{fields.title}}"'
     fields:
       - { label: 'Projekt tytul', name: title, widget: string }
       - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
