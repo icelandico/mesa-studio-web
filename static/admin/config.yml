@@ -34,18 +34,15 @@ collections:
     name: 'projects'
     create: true
     folder: 'src/lib/content/projects'
-    slug: '{{project}}'
-    files:
-      - label: 'Strona Projekty'
-        name: 'homeSections'
-        fields:
-          - { label: 'Projekt tytul', name: projectTitle, widget: string }
-          - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
-          - {
-              name: gallery,
-              label: 'Projekty galeria',
-              widget: image,
-              choose_url: true,
-              media_library: { config: { multiple: true, max_files: 10 } }
-            }
-          - { label: 'Opis', name: projectDescription, widget: markdown }
+    slug: '"{{year}}-{{month}}-{{day}}-{{slug}}"'
+    fields:
+      - { label: 'Projekt tytul', name: title, widget: string }
+      - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
+      - {
+          name: gallery,
+          label: 'Projekty galeria',
+          widget: image,
+          choose_url: true,
+          media_library: { config: { multiple: true, max_files: 10 } }
+        }
+      - { label: 'Opis', name: projectDescription, widget: markdown }
