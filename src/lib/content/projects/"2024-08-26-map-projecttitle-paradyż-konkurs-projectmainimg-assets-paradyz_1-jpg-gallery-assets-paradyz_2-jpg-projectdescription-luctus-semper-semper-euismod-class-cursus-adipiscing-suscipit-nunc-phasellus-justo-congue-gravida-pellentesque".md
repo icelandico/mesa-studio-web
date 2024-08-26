@@ -1,5 +1,6 @@
 ---
 projectTitle: Paradyż-Konkurs
+title: Paradyż-Konkurs
 projectMainImg: /assets/paradyz_1.jpg
 gallery:
   - /assets/paradyz_2.jpg
