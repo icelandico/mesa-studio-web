@@ -13,6 +13,7 @@
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
 		const isMainPage = $page.route.id === '/';
+		if (!el && isMainPage) return;
 		isMainPage
 			? el.scrollIntoView({
 					behavior: 'smooth'
