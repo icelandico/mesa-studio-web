@@ -19,8 +19,8 @@
 
 <div class="flex items-center justify-between w-full h-full">
 	<div class="embla w-full h-full">
-		<button class="embla__button embla__button--prev" on:click={handlePrev}>~</button>
-		<button class="embla__button embla__button--next" on:click={handleNext}>~</button>
+		<!-- <button class="embla__button embla__button--prev" on:click={handlePrev}>~</button>
+		<button class="embla__button embla__button--next" on:click={handleNext}>~</button> -->
 		<div class="embla__viewport h-full" use:emblaCarouselSvelte on:emblaInit={onInit}>
 			<div class="embla__container h-full">
 				{#each galleryPhotos as photo}
@@ -29,6 +29,10 @@
 					</div>
 				{/each}
 			</div>
+		</div>
+		<div class="embla__controls">
+			<button class="embla__button embla__button--prev" on:click={handlePrev}>~</button>
+			<button class="embla__button embla__button--next" on:click={handleNext}>~</button>
 		</div>
 	</div>
 </div>
@@ -48,10 +52,13 @@
 		padding-left: 1rem;
 	}
 
+	.embla__controls {
+		margin-top: 12px;
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.embla__button {
-		position: absolute;
-		top: 40%;
-		transform: translateY(-50%);
 		border-radius: 50%;
 		border: 1px solid #719fc4;
 		width: 40px;
@@ -81,6 +88,7 @@
 			top: 50%;
 			width: 35px;
 			height: 35px;
+			transform: translateY(-50%);
 		}
 
 		.embla__button--prev {

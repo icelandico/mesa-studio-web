@@ -20,7 +20,7 @@
 	id="studio"
 	bind:this={element}
 	bind:clientHeight
-	class="box-border px-4 md:px-12 mt-[80px] md:pt-[80px] md:h-screen flex items-center justify-center"
+	class="box-border px-4 md:px-12 mt-12 md:pt-[80px] md:h-screen flex items-center justify-center"
 >
 	<SectionStudio subtitle={indexData.studioSubtitle} photo={indexData.studioImage} />
 </section>
