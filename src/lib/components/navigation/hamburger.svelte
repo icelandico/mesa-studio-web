@@ -33,7 +33,11 @@
 				/>
 			</div>
 		</div>
-		<div class="fixed bg-white h-screen left-0 right-0 bottom-0 z-40 {open ? '' : 'hidden'}">
+		<div
+			class="fixed flex justify-center align-center bg-white h-screen left-0 right-0 bottom-0 z-40 {open
+				? ''
+				: 'hidden'}"
+		>
 			<ul class="flex flex-col justify-center items-center p-12 gap-8">
 				<li>
 					<a class="inline-block" href="#studio">studio</a>
@@ -44,7 +48,7 @@
 				<li>
 					<a class="inline-block cursor-pointer" href="#contact">kontakt</a>
 				</li>
-				<li class="cursor-pointer flex-1 text-right">en</li>
+				<li class="cursor-pointer text-right">en</li>
 			</ul>
 		</div>
 	</nav>

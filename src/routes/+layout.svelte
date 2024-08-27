@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import '@fontsource/gothic-a1';
 	import Head from '$lib/components/head.svelte';
 	import Navigation from '$lib/components/navigation/navigation.svelte';
 	import Hamburger from '$lib/components/navigation/hamburger.svelte';

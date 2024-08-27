@@ -8,8 +8,6 @@
 	export let data;
 	const indexData = data.homePageData[0];
 	const projectsData = data.projectsPageData;
-
-	console.log('proj', projectsData);
 </script>
 
 <section

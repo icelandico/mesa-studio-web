@@ -3,11 +3,17 @@
 	export let projects: Array<Project>;
 </script>
 
-<div class="flex flex-wrap w-full justify-between">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
 	{#each projects as project}
-		<div class="w-full md:w-[30%] m-[10px] project-container cursor-pointer">
-			<img class="aspect-square object-cover" src={project.projectMainImg} />
-			<p class="mt-4 project-subtitle">{project.title}</p>
+		<div class="project-container cursor-pointer">
+			<a class="block w-full h-full" href={`projects/${project.slug}`}>
+				<img
+					class="aspect-square object-cover"
+					src={project.projectMainImg}
+					alt="projekt wnętrza"
+				/>
+				<p class="mt-4 project-subtitle">{project.title}</p>
+			</a>
 		</div>
 	{/each}
 </div>

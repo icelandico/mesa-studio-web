@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { goto, onNavigate } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	let scrollTopValue: number;
 	let activeSection: string;
@@ -10,10 +12,12 @@
 
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
-		if (!el) return;
-		el.scrollIntoView({
-			behavior: 'smooth'
-		});
+		const isMainPage = $page.route.id === '/';
+		isMainPage
+			? el.scrollIntoView({
+					behavior: 'smooth'
+			  })
+			: goto(`/${target.getAttribute('href')}`);
 	}
 
 	function setActiveSection(scrollValue: number) {
@@ -67,7 +71,7 @@
 					on:click|preventDefault={scrollIntoView}>studio</a
 				>
 			</li>
-			<li class=" flex-1">
+			<li class="flex-1">
 				<a
 					class="inline-block {activeSection === 'projects' ? 'active' : ''}"
 					href="#projects"
@@ -75,7 +79,7 @@
 				>
 			</li>
 			<li class="inline-block cursor-pointer flex justify-center basis-6/12">
-				<p>LOGO</p>
+				<a class="inline-block" on:click={() => goto('/')}>LOGO</a>
 			</li>
 			<li class="flex-1 text-right">
 				<a
