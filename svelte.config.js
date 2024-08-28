@@ -16,6 +16,9 @@ const config = {
 	],
 	extensions: ['.svelte', '.md'],
 	kit: {
+		prerender: {
+			handleMissingId: 'ignore'
+		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',

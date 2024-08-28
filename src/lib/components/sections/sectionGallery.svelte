@@ -19,8 +19,6 @@
 
 <div class="flex items-center justify-between w-full h-full">
 	<div class="embla w-full h-full">
-		<!-- <button class="embla__button embla__button--prev" on:click={handlePrev}>~</button>
-		<button class="embla__button embla__button--next" on:click={handleNext}>~</button> -->
 		<div class="embla__viewport h-full" use:emblaCarouselSvelte on:emblaInit={onInit}>
 			<div class="embla__container h-full">
 				{#each galleryPhotos as photo}
