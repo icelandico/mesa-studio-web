@@ -1,8 +1,16 @@
-<script>
-	let open = false;
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
-	function handleToggleMenu() {
+	let open = false;
+	let currentRoute = '';
+	$: currentRoute = $page.url.pathname;
+
+	function handleToggleMenu(route?: string) {
 		open = !open;
+		if (currentRoute.includes('/projects') && route) {
+			goto(route);
+		}
 	}
 </script>
 
@@ -11,10 +19,10 @@
 		class="h-[80px] flex bg-white justify-center items-center px-4 text-xl text-light text-primaryBlue"
 	>
 		<div class="flex w-full justify-between">
-			<div>LOGO</div>
+			<div><a class="w-full h-full" href="/">LOGO</a></div>
 			<div
 				class="relative w-[40px] h-[26px] flex flex-col justify-between pointer z-50"
-				on:click={handleToggleMenu}
+				on:click={() => handleToggleMenu()}
 			>
 				<span
 					class="h-1 block w-full b-radius-[10px] bg-primaryBlue transition ease duration-250 {open
@@ -40,13 +48,25 @@
 		>
 			<ul class="flex flex-col justify-center items-center p-12 gap-8">
 				<li>
-					<a class="text-4xl inline-block" href="#studio">studio</a>
+					<a
+						class="text-4xl inline-block"
+						href="#studio"
+						on:click={() => handleToggleMenu('/#studio')}>studio</a
+					>
 				</li>
 				<li>
-					<a class="text-4xl inline-block" href="#projects">projekty</a>
+					<a
+						class="text-4xl inline-block"
+						href="#projects"
+						on:click={() => handleToggleMenu('/#projects')}>projekty</a
+					>
 				</li>
 				<li>
-					<a class="text-4xl inline-block cursor-pointer" href="#contact">kontakt</a>
+					<a
+						class="text-4xl inline-block cursor-pointer"
+						href="#contact"
+						on:click={() => handleToggleMenu('/#contact')}>kontakt</a
+					>
 				</li>
 				<li class="text-4xl cursor-pointer text-right">en</li>
 			</ul>
