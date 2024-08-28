@@ -1,18 +1,22 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { goto, onNavigate } from '$app/navigation';
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+
+	const MAIN_PAGE = '/';
 
 	let scrollTopValue: number;
 	let activeSection: string;
 	let sectionStudio: DOMRect | undefined;
 	let sectionProject: DOMRect | undefined;
 	let sectionContact: DOMRect | undefined;
+	let currentRoute = '';
+	$: currentRoute = $page.url.pathname;
 	$: setActiveSection(scrollTopValue);
+	$: isMainPage = currentRoute === MAIN_PAGE;
 
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
-		const isMainPage = $page.route.id === '/';
 		if (!el && isMainPage) return;
 		isMainPage
 			? el.scrollIntoView({
@@ -22,6 +26,10 @@
 	}
 
 	function setActiveSection(scrollValue: number) {
+		if (!isMainPage) {
+			activeSection = '';
+			return;
+		}
 		const scrollTopValue = scrollValue + 80;
 
 		if (
@@ -74,7 +82,9 @@
 			</li>
 			<li class="flex-1">
 				<a
-					class="inline-block {activeSection === 'projects' ? 'active' : ''}"
+					class="inline-block {currentRoute.includes('/projects') || activeSection === 'projects'
+						? 'active'
+						: ''}"
 					href="#projects"
 					on:click|preventDefault={scrollIntoView}>projekty</a
 				>

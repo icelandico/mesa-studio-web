@@ -10,7 +10,6 @@ export const lazyLoad = (image: HTMLImageElement, src: string) => {
 	};
 	const observer = new IntersectionObserver((entries) => {
 		if (entries[0].isIntersecting) {
-			console.log('an image has loaded');
 			image.src = src;
 			if (image.complete) {
 				loaded();

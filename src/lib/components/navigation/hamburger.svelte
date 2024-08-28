@@ -40,15 +40,15 @@
 		>
 			<ul class="flex flex-col justify-center items-center p-12 gap-8">
 				<li>
-					<a class="inline-block" href="#studio">studio</a>
+					<a class="text-4xl inline-block" href="#studio">studio</a>
 				</li>
 				<li>
-					<a class="inline-block" href="#projects">projekty</a>
+					<a class="text-4xl inline-block" href="#projects">projekty</a>
 				</li>
 				<li>
-					<a class="inline-block cursor-pointer" href="#contact">kontakt</a>
+					<a class="text-4xl inline-block cursor-pointer" href="#contact">kontakt</a>
 				</li>
-				<li class="cursor-pointer text-right">en</li>
+				<li class="text-4xl cursor-pointer text-right">en</li>
 			</ul>
 		</div>
 	</nav>
