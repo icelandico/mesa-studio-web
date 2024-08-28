@@ -60,6 +60,7 @@
 	}
 
 	onMount(() => {
+		setActiveSection(scrollTopValue);
 		sectionStudio = document.querySelector('#studio')?.getBoundingClientRect();
 		sectionProject = document.querySelector('#projects')?.getBoundingClientRect();
 		sectionContact = document.querySelector('#contact')?.getBoundingClientRect();
