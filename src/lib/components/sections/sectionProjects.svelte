@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Project } from '$lib/server/projects';
+	import {lazyLoad} from '$lib/utils/lazyLoad'
 	export let projects: Array<Project>;
 </script>
 
@@ -7,10 +8,11 @@
 	{#each projects as project}
 		<div class="project-container cursor-pointer">
 			<a class="block w-full h-full" href={`projects/${project.slug}`}>
-				<img
+				<img 
 					class="aspect-square object-cover"
-					src={project.projectMainImg}
+					use:lazyLoad={project.projectMainImg}
 					alt="projekt wnętrza"
+					loading="eager"
 				/>
 				<p class="mt-4 project-subtitle">{project.title}</p>
 			</a>
