@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {lazyLoad} from '$lib/utils/lazyLoad';
+	import { lazyLoad } from '$lib/utils/lazyLoad';
 	export let data;
 </script>
 
@@ -8,7 +8,12 @@
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
 		{#each data.gallery as image}
 			<div class="">
-				<img class="aspect-square object-cover" loading="eager" use:lazyLoad={image} alt="projekt wnętrza" />
+				<img
+					class="aspect-square object-cover image-loading"
+					loading="eager"
+					use:lazyLoad={image}
+					alt="projekt wnętrza"
+				/>
 			</div>
 		{/each}
 	</div>

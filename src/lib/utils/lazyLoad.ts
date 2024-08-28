@@ -1,12 +1,12 @@
 const options = {
 	root: null,
 	rootMargin: '0px',
-	threshold: 0
+	threshold: 0.3
 };
 
 export const lazyLoad = (image: HTMLImageElement, src: string) => {
 	const loaded = () => {
-		image.style.opacity = '1';
+		image.classList.add('loaded');
 	};
 	const observer = new IntersectionObserver((entries) => {
 		if (entries[0].isIntersecting) {
