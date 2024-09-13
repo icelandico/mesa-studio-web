@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import { _, locale, locales, getLocaleFromNavigator } from 'svelte-i18n';
 
 	const MAIN_PAGE = '/';
 
@@ -59,6 +60,11 @@
 		activeSection = '';
 	}
 
+	const setLocale = () => {
+		const currentLocale = getLocaleFromNavigator();
+		locale.set('fr');
+	};
+
 	onMount(() => {
 		setActiveSection(scrollTopValue);
 		sectionStudio = document.querySelector('#studio')?.getBoundingClientRect();
@@ -78,7 +84,7 @@
 				<a
 					class="inline-block {activeSection === 'studio' ? 'active' : ''}"
 					href="#studio"
-					on:click|preventDefault={scrollIntoView}>studio</a
+					on:click|preventDefault={scrollIntoView}>{$_('studio')}</a
 				>
 			</li>
 			<li class="flex-1">
@@ -87,7 +93,7 @@
 						? 'active'
 						: ''}"
 					href="#projects"
-					on:click|preventDefault={scrollIntoView}>projekty</a
+					on:click|preventDefault={scrollIntoView}>{$_('projects')}</a
 				>
 			</li>
 			<li class="inline-block cursor-pointer flex justify-center basis-6/12">
@@ -97,10 +103,20 @@
 				<a
 					class="inline-block cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
 					href="#contact"
-					on:click|preventDefault={scrollIntoView}>kontakt</a
+					on:click|preventDefault={scrollIntoView}>{$_('contact')}</a
 				>
 			</li>
-			<li class="cursor-pointer flex-1 text-right">en</li>
+			<li class="cursor-pointer flex-1 text-right">
+				<!-- <span class="inline-block cursor-pointer" on:click={setLocale}
+					>{getLocaleFromNavigator() === 'en' ? 'pl' : 'en'}</span
+				> -->
+
+				<select bind:value={$locale}>
+					{#each $locales as locale}
+						<option value={locale}>{locale}</option>
+					{/each}
+				</select>
+			</li>
 		</ul>
 	</nav>
 </header>
