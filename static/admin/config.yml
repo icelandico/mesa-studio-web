@@ -8,6 +8,10 @@ backend:
     delete: 'Delete {{collection}} “{{slug}}”'
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
+i18n:
+  structure: multiple_folders
+  locales: [en, pl]
+  default_locale: pl
 
 media_folder: static/assets
 public_folder: /assets
@@ -36,7 +40,7 @@ collections:
     folder: 'src/lib/content/projects'
     slug: '{{fields.title}}'
     fields:
-      - { label: 'Projekt tytul', name: title, widget: string }
+      - { label: 'Projekt tytul', name: title, widget: string, i18n: true }
       - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
       - {
           name: gallery,
@@ -45,4 +49,4 @@ collections:
           choose_url: true,
           media_library: { config: { multiple: true, max_files: 10 } }
         }
-      - { label: 'Opis', name: projectDescription, widget: markdown }
+      - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
