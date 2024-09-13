@@ -14,7 +14,7 @@ i18n:
   default_locale: pl
 slug:
   encoding: 'ascii'
-   clean_accents: true
+  clean_accents: true
 
 media_folder: static/assets
 public_folder: /assets
