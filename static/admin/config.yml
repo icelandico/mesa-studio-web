@@ -12,6 +12,8 @@ i18n:
   structure: multiple_folders
   locales: [en, pl]
   default_locale: pl
+slug:
+  encoding: 'ascii'
 
 media_folder: static/assets
 public_folder: /assets
