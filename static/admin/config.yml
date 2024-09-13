@@ -22,11 +22,14 @@ show_preview_links: true
 collections:
   - label: 'Sekcje'
     name: 'sections'
-    i18n: true
+    i18n:
+      structure: single_file
+      locales: [en, pl]
     files:
       - label: 'Home Sekcje'
         name: 'homeSections'
         file: 'src/lib/content/sections/index.md'
+        i18n: true,
         fields:
           - { label: 'Studio podtytul', name: studioSubtitle, widget: string, i18n: true }
           - { label: 'Studio zdjecie', name: studioImage, widget: image }
