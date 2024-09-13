@@ -39,6 +39,7 @@ collections:
     create: true
     folder: 'src/lib/content/projects'
     slug: '{{fields.title}}'
+    i18n: true
     fields:
       - { label: 'Projekt tytul', name: title, widget: string, i18n: true }
       - { label: 'Projekt glowne zdjecie', name: projectMainImg, widget: image }
@@ -47,6 +48,7 @@ collections:
           label: 'Projekty galeria',
           widget: image,
           choose_url: true,
+          i18n: duplicate,
           media_library: { config: { multiple: true, max_files: 10 } }
         }
       - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
