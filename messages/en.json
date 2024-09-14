@@ -12,5 +12,6 @@
 	"contactFormPhone": "Phone number",
 	"contactFormDescription": "What interior do you need help with?",
 	"contactSubmit": "Submit",
-	"contactValidationInfo": "This field is mandatory."
+	"contactValidationInfo": "This field is mandatory.",
+	"contactSubmitMessage": "Thank you for contacting us. We will contact you soon."
 }
