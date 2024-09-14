@@ -27,7 +27,7 @@
 							class="w-full h-full object-cover"
 							src={photo}
 							alt="mesa studio galeria"
-							title={photo}
+							title="mesa studio interior design"
 						/>
 					</div>
 				{/each}
