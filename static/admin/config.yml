@@ -33,12 +33,13 @@ collections:
         i18n: true,
         fields:
           - { label: 'Studio podtytul', name: studioSubtitle, widget: string, i18n: true }
-          - { label: 'Studio zdjecie', name: studioImage, widget: image }
+          - { label: 'Studio zdjecie', name: studioImage, widget: image, i18n: duplicate  }
           - {
               name: gallery,
               label: 'Home galeria',
               widget: image,
               choose_url: true,
+              i18n: duplicate
               media_library: { config: { multiple: true, max_files: 10 } }
             }
   - label: 'Projekty'
