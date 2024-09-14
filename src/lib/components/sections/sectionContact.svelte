@@ -63,6 +63,7 @@
 	<div class="md:basis-1/2 w-full">
 		<form name="contact" class="flex flex-col gap-4" data-netlify="true" method="POST">
 			<div class="flex flex-col">
+				<input type="hidden" name="form-name" value="contact" />
 				<label class="text-primaryBlue" for="name">{m.contactFormName()}</label>
 				<input
 					class="border-lightBlue border-2 mt-2 h-10 px-2"
