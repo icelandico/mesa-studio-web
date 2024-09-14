@@ -106,7 +106,7 @@
 					use:validationErrors
 				/>
 			</div>
-			<div class="error-message hidden">{m.contactValidationInfo()}</div>
+			<div class="error-message hidden text-[#ca634d]">{m.contactValidationInfo()}</div>
 			<button type="submit" on:click={onSubmitClick} class="p-2 bg-lightBlue text-white"
 				>{m.contactSubmit()}</button
 			>
