@@ -55,7 +55,7 @@
 				</div>
 			</div>
 			<div class="flex flex-col">
-				<label class="text-primaryBlue" for="description">{m.contactFormDescription()}?</label>
+				<label class="text-primaryBlue" for="description">{m.contactFormDescription()}</label>
 				<textarea
 					class="border-lightBlue border-2 mt-2 px-2 pt-2"
 					id="description"
