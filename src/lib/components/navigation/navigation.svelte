@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { _, locale, locales, getLocaleFromNavigator } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 
 	const MAIN_PAGE = '/';
 
@@ -60,11 +60,6 @@
 		activeSection = '';
 	}
 
-	const setLocale = () => {
-		const currentLocale = getLocaleFromNavigator();
-		locale.set('fr');
-	};
-
 	onMount(() => {
 		setActiveSection(scrollTopValue);
 		sectionStudio = document.querySelector('#studio')?.getBoundingClientRect();
@@ -107,15 +102,11 @@
 				>
 			</li>
 			<li class="cursor-pointer flex-1 text-right">
-				<!-- <span class="inline-block cursor-pointer" on:click={setLocale}
-					>{getLocaleFromNavigator() === 'en' ? 'pl' : 'en'}</span
-				> -->
-
-				<select bind:value={$locale}>
-					{#each $locales as locale}
-						<option value={locale}>{locale}</option>
-					{/each}
-				</select>
+				<span
+					class="inline-block cursor-pointer"
+					on:click={() => locale.set($locale === 'en' ? 'pl' : 'en')}
+					>{$locale === 'en' ? 'pl' : 'en'}</span
+				>
 			</li>
 		</ul>
 	</nav>
