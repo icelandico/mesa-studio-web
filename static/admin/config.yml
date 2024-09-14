@@ -24,7 +24,7 @@ collections:
   - label: 'Sekcje'
     name: 'sections'
     i18n:
-      structure: single_file
+      structure: multiple_folders
       locales: [en, pl]
     files:
       - label: 'Home Sekcje'
