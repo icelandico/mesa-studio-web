@@ -13,7 +13,6 @@
 	let sectionProject: DOMRect | undefined;
 	let sectionContact: DOMRect | undefined;
 	let currentRoute = '';
-	let currentPath = '';
 	let isMainPage: boolean;
 	$: currentRoute = $page.url.pathname;
 	$: setActiveSection(scrollTopValue);
@@ -41,7 +40,6 @@
 			return;
 		}
 		const scrollTopValue = scrollValue + 80;
-
 		if (
 			sectionStudio &&
 			scrollTopValue >= sectionStudio.top &&
@@ -87,7 +85,9 @@
 				const el = document.querySelector(hash);
 				if (el) {
 					el.scrollIntoView({ behavior: 'smooth' });
-					setActiveSection(window.scrollY);
+					setTimeout(() => {
+						setActiveSection(window.scrollY);
+					}, 500);
 				}
 			}
 		}

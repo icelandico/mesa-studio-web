@@ -1,7 +1,39 @@
-<script>
+<script lang="ts">
 	import InstagramIcon from '$lib/components/icons/instagramIcon.svelte';
 	import FacebookIcon from '$lib/components/icons/facebookIcon.svelte';
 	import * as m from '$lib/paraglide/messages.js';
+
+	function validationErrors(node) {
+		const output = node;
+		node.addEventListener('invalid', onInvalid);
+		node.addEventListener('input', onInput);
+		function onInvalid() {
+			const errorMessage: HTMLDivElement | null = document.querySelector('.error-message');
+			node.style.outlineColor = '#ca634d';
+			errorMessage?.classList.remove('hidden');
+		}
+
+		function onInput() {
+			if (node.validationMessage === '') output.textContent = '';
+		}
+
+		return {
+			destroy() {
+				node.removeEventListener('invalid', onInvalid);
+				node.removeEventListener('input', onInput);
+			}
+		};
+	}
+
+	function onSubmitClick(event) {
+		const form = event.target.closest('form');
+		const valid = form.checkValidity();
+
+		if (valid == false) {
+			event.preventDefault();
+			[...form].find((e) => e.validity.valid == false)?.focus();
+		}
+	}
 </script>
 
 <div
@@ -38,6 +70,7 @@
 					id="name"
 					name="name"
 					required
+					use:validationErrors
 				/>
 			</div>
 			<div class="flex flex-col md:flex-row justify-between gap-4 w-full">
@@ -49,6 +82,7 @@
 						id="email"
 						name="email"
 						required
+						use:validationErrors
 					/>
 				</div>
 				<div class="flex flex-col w-full">
@@ -69,9 +103,23 @@
 					name="description"
 					rows="4"
 					required
+					use:validationErrors
 				/>
 			</div>
-			<button type="submit" class="p-2 bg-lightBlue text-white">{m.contactSubmit()}</button>
+			<div class="error-message hidden">{m.contactValidationInfo()}</div>
+			<button type="submit" on:click={onSubmitClick} class="p-2 bg-lightBlue text-white"
+				>{m.contactSubmit()}</button
+			>
 		</form>
 	</div>
 </div>
+
+<style>
+	.hidden {
+		display: none;
+	}
+
+	.visible {
+		display: unset;
+	}
+</style>

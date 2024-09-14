@@ -11,5 +11,6 @@
 	"contactFormEmail": "Adres email",
 	"contactFormPhone": "Numer telefonu",
 	"contactFormDescription": "Pomocy przy jakim wnętrzu potrzebujesz?",
-	"contactSubmit": "Wyślij"
+	"contactSubmit": "Wyślij",
+	"contactValidationInfo": "To pole jest obowiązkowe."
 }

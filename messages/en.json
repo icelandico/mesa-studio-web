@@ -11,5 +11,6 @@
 	"contactFormEmail": "Email",
 	"contactFormPhone": "Phone number",
 	"contactFormDescription": "What interior do you need help with?",
-	"contactSubmit": "Submit"
+	"contactSubmit": "Submit",
+	"contactValidationInfo": "This field is mandatory."
 }
