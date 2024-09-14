@@ -24,7 +24,7 @@ collections:
   - label: 'Sekcje'
     name: 'sections'
     i18n:
-      structure: multiple_folders
+      structure: single_file
       locales: [en, pl]
     files:
       - label: 'Home Sekcje'
@@ -33,13 +33,13 @@ collections:
         i18n: true,
         fields:
           - { label: 'Studio podtytul', name: studioSubtitle, widget: string, i18n: true }
-          - { label: 'Studio zdjecie', name: studioImage, widget: image, i18n: duplicate  }
+          - { label: 'Studio zdjecie', name: studioImage, widget: image, i18n: true  }
           - {
               name: gallery,
               label: 'Home galeria',
               widget: image,
               choose_url: true,
-              i18n: duplicate
+              i18n: true
               media_library: { config: { multiple: true, max_files: 10 } }
             }
   - label: 'Projekty'
