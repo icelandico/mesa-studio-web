@@ -8,7 +8,8 @@
 	let element: Element;
 	let clientHeight: number;
 	export let data;
-	const indexData = data.homePageData.filter((el) => el.locale === languageTag())[0];
+	const lang = languageTag();
+	const indexData = data.homePageData[0][lang];
 	const projectsData = data.projectsPageData.filter((el) => el.locale === languageTag());
 </script>
 

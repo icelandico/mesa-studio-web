@@ -7,7 +7,7 @@ export interface HomePage {
 }
 
 type GlobEntry = {
-	metadata: HomePage;
+	metadata: {en: HomePage, pl: HomePage};
 	default: unknown;
 };
 
@@ -15,13 +15,9 @@ export const homeData = () => {
 	const allHomeData = Object.entries(
 		import.meta.glob<GlobEntry>('./../content/sections/**/*.md', { eager: true })
 	).map(([filepath, globEntry]) => {
-		const pathParts = filepath.split('/');
-		const fileLocale = pathParts[pathParts.length - 2];
-
 		return {
 			...globEntry.metadata,
-			slug: parse(filepath).name,
-			locale: fileLocale
+			slug: parse(filepath).name
 		};
 	});
 	return allHomeData;

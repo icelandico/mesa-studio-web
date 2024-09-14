@@ -22,6 +22,6 @@
 		</p>
 	</div>
 	<div class="md:basis-1/4 h-full">
-		<img class="h-full" alt="Mesa studio team" src={photo} />
+		<img class="h-full object-fit" alt="Mesa studio team" src={photo} />
 	</div>
 </div>
