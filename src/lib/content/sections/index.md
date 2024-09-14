@@ -4,7 +4,7 @@ en:
     clients. We want to create a super space that will bring joy to those who
     use it. We create unconventional, interesting spaces that affect the
     recipient.
-  studioImage: /assets/pkom.jpg
+  studioImage: /assets/poketeam.jpg
   gallery:
     - /assets/section_hero_5.jpg
     - /assets/section_hero_4.png
@@ -20,4 +20,5 @@ pl:
     - /assets/section_hero_4.png
     - /assets/section_hero_3.jpg
     - /assets/picka.png
+  studioImage: /assets/poketeam.jpg
 ---
