@@ -32,7 +32,13 @@
 		<form name="contact" class="flex flex-col gap-4" data-netlify="true" method="POST">
 			<div class="flex flex-col">
 				<label class="text-primaryBlue" for="name">{m.contactFormName()}</label>
-				<input class="border-lightBlue border-2 mt-2 h-10 px-2" type="text" id="name" name="name" />
+				<input
+					class="border-lightBlue border-2 mt-2 h-10 px-2"
+					type="text"
+					id="name"
+					name="name"
+					required
+				/>
 			</div>
 			<div class="flex flex-col md:flex-row justify-between gap-4 w-full">
 				<div class="flex flex-col w-full">
@@ -42,6 +48,7 @@
 						type="text"
 						id="email"
 						name="email"
+						required
 					/>
 				</div>
 				<div class="flex flex-col w-full">
@@ -61,6 +68,7 @@
 					id="description"
 					name="description"
 					rows="4"
+					required
 				/>
 			</div>
 			<button type="submit" class="p-2 bg-lightBlue text-white">{m.contactSubmit()}</button>
