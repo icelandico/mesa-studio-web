@@ -6,6 +6,7 @@
 	import { languageTag } from '$lib/paraglide/runtime.js';
 	import { i18n } from '$lib/i18n';
 	import { get } from 'svelte/store';
+	import MesaIcon from '../icons/mesaIcon.svelte';
 
 	let scrollTopValue: number;
 	let activeSection: string;
@@ -118,9 +119,9 @@
 				>
 			</li>
 			<li class="cursor-pointer flex justify-center basis-6/12">
-				<a class="inline-block" on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}
-					>LOGO</a
-				>
+				<a class="inline-block" on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}>
+					<MesaIcon />
+				</a>
 			</li>
 			<li class="flex-1 text-right">
 				<a

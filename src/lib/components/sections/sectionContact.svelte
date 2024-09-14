@@ -50,12 +50,12 @@
 				<a
 					class="flex items-center gap-2"
 					href="https://www.instagram.com/mesa_studio_/"
-					target="_blank"><InstagramIcon width={15} height={15} />mesa_studio_</a
+					target="_blank"><InstagramIcon width={20} height={20} />mesa_studio_</a
 				>
 				<a
 					class="flex items-center gap-2"
 					href="https://www.facebook.com/people/mesa-studio/100088669205685/"
-					target="_blank"><FacebookIcon width={15} height={15} />mesa studio</a
+					target="_blank"><FacebookIcon width={20} height={20} />mesa studio</a
 				>
 			</div>
 		</div>
