@@ -1,0 +1,15 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"projects": "projekty",
+	"contact": "kontakt",
+	"studio": "studio",
+	"studioLine1": "architektki wnętrz",
+	"studioLine2": "absolwentki Akademii",
+	"studioLine3": "Sztuk Pięknych w Gdańsku",
+	"contactWithUs": "Skontaktuj się z nami",
+	"contactFormName": "Imię i nazwisko",
+	"contactFormEmail": "Adres email",
+	"contactFormPhone": "Numer telefonu",
+	"contactFormDescription": "Pomocy przy jakim wnętrzy potrzebujesz?",
+	"contactSubmit": "Wyślij"
+}

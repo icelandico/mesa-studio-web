@@ -1,0 +1,15 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"projects": "projects",
+	"contact": "contact",
+	"studio": "studio",
+	"studioLine1": "interior designers",
+	"studioLine2": "graduates of the Academy",
+	"studioLine3": "of the Fine Arts in Gdańsk",
+	"contactWithUs": "Contact with us",
+	"contactFormName": "First name and last name",
+	"contactFormEmail": "Email",
+	"contactFormPhone": "Phone number",
+	"contactFormDescription": "What interior do you need help with?",
+	"contactSubmit": "Submit"
+}

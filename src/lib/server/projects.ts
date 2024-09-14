@@ -13,12 +13,18 @@ export interface Project {
 	slug: string;
 }
 
-export const projectsData = Object.entries(
-	import.meta.glob<GlobEntry>('./../content/projects/**/*.md', { eager: true })
-).map(([filepath, globEntry]) => {
-	return {
-		...globEntry.metadata,
+export const projectsData = () => {
+	const projectsData = Object.entries(import.meta.glob<GlobEntry>('./../content/projects/**/*.md', { eager: true })).map(
+		([filepath, globEntry]) => {
+			const pathParts = filepath.split('/');
+			const fileLocale = pathParts[pathParts.length - 2];
 
-		slug: parse(filepath).name
-	};
-});
+			return {
+				...globEntry.metadata,
+				locale: fileLocale,
+				slug: parse(filepath).name
+			};
+		}
+	);
+	return projectsData;
+};
