@@ -3,11 +3,13 @@
 	import SectionGallery from '$lib/components/sections/sectionGallery.svelte';
 	import SectionProjects from '$lib/components/sections/sectionProjects.svelte';
 	import SectionStudio from '$lib/components/sections/sectionStudio.svelte';
+	import { languageTag } from '$lib/paraglide/runtime.js';
+
 	let element: Element;
 	let clientHeight: number;
 	export let data;
-	const indexData = data.homePageData[0];
-	const projectsData = data.projectsPageData;
+	const indexData = data.homePageData.filter((el) => el.locale === languageTag())[0];
+	const projectsData = data.projectsPageData.filter((el) => el.locale === languageTag());
 </script>
 
 <section

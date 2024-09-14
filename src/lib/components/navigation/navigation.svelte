@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
-
-	const MAIN_PAGE = '/';
+	import { page, navigating } from '$app/stores';
+	import * as m from '$lib/paraglide/messages.js';
+	import { languageTag } from '$lib/paraglide/runtime.js';
+	import { i18n } from '$lib/i18n';
+	import { get } from 'svelte/store';
 
 	let scrollTopValue: number;
 	let activeSection: string;
@@ -11,18 +13,26 @@
 	let sectionProject: DOMRect | undefined;
 	let sectionContact: DOMRect | undefined;
 	let currentRoute = '';
+	let currentPath = '';
+	let isMainPage: boolean;
 	$: currentRoute = $page.url.pathname;
 	$: setActiveSection(scrollTopValue);
-	$: isMainPage = currentRoute === MAIN_PAGE;
+	$: {
+		const currentPath = $page.url.pathname;
+		isMainPage = currentPath === '/' || currentPath === '/en';
+	}
 
 	function scrollIntoView({ target }) {
-		const el = document.querySelector(target.getAttribute('href'));
+		const hashValue = target.hash;
+		const el = document.querySelector(hashValue);
+
 		if (!el && isMainPage) return;
+
 		isMainPage
 			? el.scrollIntoView({
 					behavior: 'smooth'
 			  })
-			: goto(`/${target.getAttribute('href')}`);
+			: goto(`/${languageTag() === 'en' ? 'en' : ''}${hashValue}`);
 	}
 
 	function setActiveSection(scrollValue: number) {
@@ -59,11 +69,28 @@
 		activeSection = '';
 	}
 
+	function handleLanguageSwitch() {
+		const newLang = languageTag() === 'en' ? 'pl' : 'en';
+		const canonicalPath = i18n.route(get(page).url.pathname);
+		const localisedPath = i18n.resolveRoute(canonicalPath, newLang);
+		goto(localisedPath);
+	}
+
 	onMount(() => {
-		setActiveSection(scrollTopValue);
-		sectionStudio = document.querySelector('#studio')?.getBoundingClientRect();
-		sectionProject = document.querySelector('#projects')?.getBoundingClientRect();
-		sectionContact = document.querySelector('#contact')?.getBoundingClientRect();
+		if (isMainPage) {
+			sectionStudio = document.querySelector('#studio')?.getBoundingClientRect();
+			sectionContact = document.querySelector('#contact')?.getBoundingClientRect();
+			sectionProject = document.querySelector('#projects')?.getBoundingClientRect();
+
+			const hash = window.location.hash;
+			if (hash) {
+				const el = document.querySelector(hash);
+				if (el) {
+					el.scrollIntoView({ behavior: 'smooth' });
+					setActiveSection(window.scrollY);
+				}
+			}
+		}
 	});
 </script>
 
@@ -78,30 +105,34 @@
 				<a
 					class="inline-block {activeSection === 'studio' ? 'active' : ''}"
 					href="#studio"
-					on:click|preventDefault={scrollIntoView}>studio</a
+					on:click|preventDefault={scrollIntoView}>{m.studio()}</a
 				>
 			</li>
 			<li class="flex-1">
 				<a
-					class="inline-block {currentRoute.includes('/projects') || activeSection === 'projects'
+					class="inline {currentRoute.includes('/projects') || activeSection === 'projects'
 						? 'active'
 						: ''}"
 					href="#projects"
-					on:click|preventDefault={scrollIntoView}>projekty</a
+					on:click|preventDefault={scrollIntoView}>{m.projects()}</a
 				>
 			</li>
-			<li class="inline-block cursor-pointer flex justify-center basis-6/12">
-				<a class="inline-block" on:click={() => goto('/')}>LOGO</a>
+			<li class="cursor-pointer flex justify-center basis-6/12">
+				<a class="inline-block" on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}
+					>LOGO</a
+				>
 			</li>
 			<li class="flex-1 text-right">
 				<a
-					class="inline-block cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
+					class="inline cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
 					href="#contact"
-					on:click|preventDefault={scrollIntoView}>kontakt</a
+					on:click|preventDefault={scrollIntoView}>{m.contact()}</a
 				>
 			</li>
-			<li class="cursor-pointer flex-1 text-right">
-				<span class="inline-block cursor-pointer">pl</span>
+			<li class="flex-1 text-right">
+				<span class="inline-block cursor-pointer" on:click={handleLanguageSwitch}
+					>{languageTag() === 'en' ? 'pl' : 'en'}</span
+				>
 			</li>
 		</ul>
 	</nav>

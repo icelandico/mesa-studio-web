@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+	import { i18n } from '$lib/i18n';
+
 	import '../app.css';
 	import Head from '$lib/components/head.svelte';
 	import Navigation from '$lib/components/navigation/navigation.svelte';
@@ -6,15 +9,18 @@
 	let windowSize: number;
 </script>
 
-<Head />
 <svelte:window bind:innerWidth={windowSize} />
 
-<Navigation />
-<Hamburger />
-{#if windowSize > 768}
-	<Navigation />
-{:else}
-	<Hamburger />
-{/if}
+<ParaglideJS {i18n}>
+	<Head />
 
-<slot />
+	<Navigation />
+	<Hamburger />
+	{#if windowSize > 768}
+		<Navigation />
+	{:else}
+		<Hamburger />
+	{/if}
+
+	<slot />
+</ParaglideJS>
