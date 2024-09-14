@@ -23,7 +23,12 @@
 			<div class="embla__container h-full">
 				{#each galleryPhotos as photo}
 					<div class="embla__slide">
-						<img class="w-full h-full object-cover" src={photo} />
+						<img
+							class="w-full h-full object-cover"
+							src={photo}
+							alt="mesa studio galeria"
+							title={photo}
+						/>
 					</div>
 				{/each}
 			</div>

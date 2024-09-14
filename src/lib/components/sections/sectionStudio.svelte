@@ -21,7 +21,7 @@
 			{subtitle}
 		</p>
 	</div>
-	<div class="md:basis-1/4 h-full">
-		<img class="h-full object-fit" alt="Mesa studio team" src={photo} />
+	<div class="h-full">
+		<img class="h-full object-cover w-full" alt="Mesa studio team" src={photo} />
 	</div>
 </div>
