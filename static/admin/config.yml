@@ -33,7 +33,7 @@ collections:
         i18n: true
         fields:
           - { label: 'Studio podtytul', name: studioSubtitle, widget: string, i18n: true }
-          - { label: 'Studio zdjecie', name: studioImage, widget: image, i18n: duplicate }
+          - { label: 'Studio zdjecie', name: studioImage, widget: image, i18n: true }
           - {
               name: gallery,
               label: 'Home galeria',
