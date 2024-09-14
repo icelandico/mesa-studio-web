@@ -3,6 +3,9 @@
 	import Head from '$lib/components/head.svelte';
 	import Navigation from '$lib/components/navigation/navigation.svelte';
 	import Hamburger from '$lib/components/navigation/hamburger.svelte';
+	import { ParaglideJS } from '@inlang/paraglide-js-adapter-sveltekit';
+	import { i18n } from '$lib/i18n/i18n.js';
+
 	let windowSize: number;
 </script>
 
@@ -17,4 +20,6 @@
 	<Hamburger />
 {/if}
 
-<slot />
+<ParaglideJS {i18n}>
+	<slot />
+</ParaglideJS>
