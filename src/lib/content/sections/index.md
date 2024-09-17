@@ -12,11 +12,11 @@ en:
     - /assets/mesa_studio_apartament_szafarnia_kroniki_07_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_12_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_20_3000.jpg
+    - /assets/mesa_studio_apartament_szafarnia_kroniki_36_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_26_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_30_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_31_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_33_3000.jpg
-    - /assets/mesa_studio_apartament_szafarnia_kroniki_36_3000.jpg
 pl:
   studioSubtitle: Tworzymy indywidualne wnętrza, dopasowane do potrzeb klientów.
     Zależy nam na stworzeniu przestrzeni, która będzie dawała radość osobom z
@@ -29,10 +29,10 @@ pl:
     - /assets/mesa_studio_apartament_szafarnia_kroniki_07_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_12_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_20_3000.jpg
+    - /assets/mesa_studio_apartament_szafarnia_kroniki_36_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_26_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_30_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_31_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_33_3000.jpg
-    - /assets/mesa_studio_apartament_szafarnia_kroniki_36_3000.jpg
   studioImage: /assets/mesa_studio_kroniki_3000.jpg
 ---
