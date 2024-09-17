@@ -1,6 +1,6 @@
 ---
 title: Motława
-projectMainImg: /assets/mesa_studio_apartament_szafarnia_kroniki_01_3000.jpg
+projectMainImg: /assets/3-r.jpg
 gallery:
   - /assets/mesa_studio_apartament_szafarnia_kroniki_02_3000.jpg
   - /assets/mesa_studio_apartament_szafarnia_kroniki_03_3000.jpg
