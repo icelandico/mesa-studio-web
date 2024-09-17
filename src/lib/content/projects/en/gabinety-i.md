@@ -1,5 +1,6 @@
 ---
 title: Gabinety I
+projectMainImg: /assets/2-r.jpg
 gallery:
   - /assets/2-r.jpg
   - /assets/3-r.jpg
