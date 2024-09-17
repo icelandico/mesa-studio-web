@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { lazyLoad } from '$lib/utils/lazyLoad';
+	import SvelteMarkdown from 'svelte-markdown';
 	export let data;
+	const source = data.projectDescription;
 </script>
 
 <section class="flex flex-col justify-center pt-[80px] px-4 md:px-12 pb-12">
@@ -18,7 +20,7 @@
 		{/each}
 	</div>
 	<article class="mt-8">
-		{data.projectDescription}
+		<SvelteMarkdown {source} />
 	</article>
 </section>
 
