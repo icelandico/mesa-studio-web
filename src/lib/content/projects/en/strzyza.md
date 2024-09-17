@@ -1,6 +1,6 @@
 ---
 title: Strzyża
-projectMainImg: /assets/4.jpg
+projectMainImg: /assets/3.jpg
 gallery:
   - /assets/5.jpg
   - /assets/2.jpg
