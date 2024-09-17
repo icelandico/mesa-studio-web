@@ -2,6 +2,9 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import MesaIcon from '../icons/mesaIcon.svelte';
+	import { languageTag } from '$lib/paraglide/runtime.js';
+	import { i18n } from '$lib/i18n';
+	import { get } from 'svelte/store';
 
 	let open = false;
 	let currentRoute = '';
@@ -12,6 +15,13 @@
 		if (currentRoute.includes('/projects') && route) {
 			goto(route);
 		}
+	}
+
+	function handleLanguageSwitch() {
+		const newLang = languageTag() === 'en' ? 'pl' : 'en';
+		const canonicalPath = i18n.route(get(page).url.pathname);
+		const localisedPath = i18n.resolveRoute(canonicalPath, newLang);
+		goto(localisedPath);
 	}
 </script>
 
@@ -69,7 +79,11 @@
 						on:click={() => handleToggleMenu('/#contact')}>kontakt</a
 					>
 				</li>
-				<li class="text-4xl cursor-pointer text-right">en</li>
+				<li class="text-4xl cursor-pointer text-right">
+					<span class="inline-block cursor-pointer" on:click={handleLanguageSwitch}
+						>{languageTag() === 'en' ? 'pl' : 'en'}</span
+					>
+				</li>
 			</ul>
 		</div>
 	</nav>
