@@ -7,11 +7,11 @@ en:
   studioImage: /assets/mesa_studio_kroniki_3000.jpg
   gallery:
     - /assets/mesa_studio_apartament_szafarnia_kroniki_04_3000.jpg
+    - /assets/mesa_studio_apartament_szafarnia_kroniki_13_3000.jpg
+    - /assets/mesa_studio_apartament_szafarnia_kroniki_23_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_07_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_12_3000.jpg
-    - /assets/mesa_studio_apartament_szafarnia_kroniki_13_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_20_3000.jpg
-    - /assets/mesa_studio_apartament_szafarnia_kroniki_23_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_26_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_30_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_31_3000.jpg
@@ -24,11 +24,11 @@ pl:
     oddziajujące na odbiorce.
   gallery:
     - /assets/mesa_studio_apartament_szafarnia_kroniki_04_3000.jpg
+    - /assets/mesa_studio_apartament_szafarnia_kroniki_13_3000.jpg
+    - /assets/mesa_studio_apartament_szafarnia_kroniki_23_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_07_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_12_3000.jpg
-    - /assets/mesa_studio_apartament_szafarnia_kroniki_13_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_20_3000.jpg
-    - /assets/mesa_studio_apartament_szafarnia_kroniki_23_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_26_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_30_3000.jpg
     - /assets/mesa_studio_apartament_szafarnia_kroniki_31_3000.jpg
