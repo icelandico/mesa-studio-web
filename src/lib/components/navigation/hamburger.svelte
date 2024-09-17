@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import MesaIcon from '../icons/mesaIcon.svelte';
 
 	let open = false;
 	let currentRoute = '';
@@ -19,7 +20,7 @@
 		class="h-[80px] flex bg-white justify-center items-center px-4 text-xl text-light text-primaryBlue"
 	>
 		<div class="flex w-full justify-between">
-			<div><a class="w-full h-full" href="/">LOGO</a></div>
+			<div><a class="w-full h-full" href="/"><MesaIcon /></a></div>
 			<div
 				class="relative w-[40px] h-[26px] flex flex-col justify-between pointer z-50"
 				on:click={() => handleToggleMenu()}
