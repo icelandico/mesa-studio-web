@@ -154,5 +154,6 @@
 		margin-top: -7px;
 		font-size: 58px;
 		color: currentColor;
+		font-family: 'Playfair Display Variable', sans-serif;
 	}
 </style>
