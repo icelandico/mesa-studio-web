@@ -45,7 +45,6 @@
 		"decap-cms-app": "^3.3.2",
 		"embla-carousel": "^8.2.0",
 		"embla-carousel-svelte": "^8.2.0",
-		"netlify-identity-widget": "^1.9.2",
 		"svelte-markdown": "^0.4.1"
 	}
 }
