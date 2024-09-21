@@ -14,5 +14,13 @@
 		<!-- Include the script that builds the page and powers Decap CMS -->
 		<div data-netlify-identity-button>Login with Netlify Identity</div>
 		<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+		<script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on('logout', () => {
+					window.location.replace('/admin');
+				});
+			}
+		</script>
 	</body>
 </html>
