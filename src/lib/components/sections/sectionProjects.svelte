@@ -1,10 +1,12 @@
 <script lang="ts">
 	import type { Project } from '$lib/server/projects';
 	import { lazyLoad } from '$lib/utils/lazyLoad';
+	import * as m from '$lib/paraglide/messages.js';
 	export let projects: Array<Project>;
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+	<h2 class="md:hidden text-primaryBlue text-[40px] text-left capitalize">{m.projects()}</h2>
 	{#each projects as project}
 		<div class="project-container cursor-pointer">
 			<a class="block w-full h-full" href={`projects/${project.slug}`}>
@@ -14,7 +16,7 @@
 					alt="projekt wnętrza"
 					loading="eager"
 				/>
-				<p class="mt-4 project-subtitle">{project.title}</p>
+				<p class="mt-4 project-subtitle text-primaryBlue">{project.title}</p>
 			</a>
 		</div>
 	{/each}

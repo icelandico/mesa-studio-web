@@ -41,7 +41,7 @@
 	class="flex flex-col md:flex-row items-center md:justify-between h-full w-full pb-8 md:pb-0 gap-8 md:gap-16 text-primaryBlue relative overflow-hidden"
 >
 	<div class="md:basis-1/3">
-		<p class="text-primaryBlue text-[40px] text-left">{m.contactWithUs()}:</p>
+		<h2 class="text-primaryBlue text-[40px] text-left">{m.contactWithUs()}:</h2>
 		<div class="flex mt-4 gap-8">
 			<div class="flex flex-col">
 				<a href="mailto:hi@mesa-studio.pl">hi@mesa-studio.pl</a>
@@ -118,7 +118,10 @@
 				/>
 			</div>
 			<div class="error-message hidden text-[#ca634d]">{m.contactValidationInfo()}</div>
-			<button type="submit" on:click={onSubmitClick} class="p-2 bg-lightBlue text-primaryBlue"
+			<button
+				type="submit"
+				on:click={onSubmitClick}
+				class="p-2 bg-white border-lightBlue border-2 text-primaryBlue rounded-[50%] h-[75px] w-[75px] self-center"
 				>{m.contactSubmit()}</button
 			>
 		</form>
