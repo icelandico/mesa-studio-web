@@ -17,7 +17,8 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	kit: {
 		prerender: {
-			handleMissingId: 'ignore'
+			handleMissingId: 'ignore',
+			handleHttpError: 'warn'
 		},
 		adapter: adapter({
 			pages: 'build',
