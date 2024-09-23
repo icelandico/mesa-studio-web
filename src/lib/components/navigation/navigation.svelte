@@ -106,7 +106,8 @@
 				<a
 					class="inline-block {activeSection === 'studio' ? 'active' : ''}"
 					href="#studio"
-					on:click|preventDefault={scrollIntoView}>{m.studio()}</a
+					on:click|preventDefault={scrollIntoView}
+					aria-label="Mesa studio info">{m.studio()}</a
 				>
 			</li>
 			<li class="flex-1">
@@ -115,11 +116,17 @@
 						? 'active'
 						: ''}"
 					href="#projects"
-					on:click|preventDefault={scrollIntoView}>{m.projects()}</a
+					on:click|preventDefault={scrollIntoView}
+					aria-label="Mesa studio projects">{m.projects()}</a
 				>
 			</li>
 			<li class="cursor-pointer flex justify-center basis-6/12">
-				<a class="inline-block" on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}>
+				<a
+					class="inline-block"
+					href={`/${languageTag() === 'pl' ? '' : 'en'}`}
+					on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}
+					aria-label="Mesa studio homepage"
+				>
 					<MesaIcon />
 				</a>
 			</li>
@@ -127,7 +134,8 @@
 				<a
 					class="inline cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
 					href="#contact"
-					on:click|preventDefault={scrollIntoView}>{m.contact()}</a
+					on:click|preventDefault={scrollIntoView}
+					aria-label="Mesa studio contact">{m.contact()}</a
 				>
 			</li>
 			<li class="flex-1 text-right">
