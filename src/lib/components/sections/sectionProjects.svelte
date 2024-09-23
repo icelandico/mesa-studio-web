@@ -24,15 +24,15 @@
 
 <style>
 	@media screen and (min-width: 768px) {
-		.project-container:nth-child(3n + 1) .project-subtitle {
+		.project-container:nth-child(3n + 2) .project-subtitle {
 			text-align: left;
 		}
 
-		.project-container:nth-child(3n + 2) .project-subtitle {
+		.project-container:nth-child(3n + 3) .project-subtitle {
 			text-align: center;
 		}
 
-		.project-container:nth-child(3n) .project-subtitle {
+		.project-container:nth-child(3n + 1) .project-subtitle {
 			text-align: right;
 		}
 	}
