@@ -19,14 +19,12 @@
 			target: document.body
 		});
 
-		// Bigger Picture - grab image links
 		imageLinks = document.querySelectorAll('#images > .project-img');
 		imageLinks.forEach((imageLink) => {
 			imageLink.addEventListener('click', openGallery);
 		});
 	}
 
-	//  BiggerPicture - function to open
 	function openGallery(e) {
 		e.preventDefault();
 		bp.open({
