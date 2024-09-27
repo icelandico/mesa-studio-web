@@ -38,7 +38,7 @@
 </script>
 
 <div
-	class="flex flex-col md:flex-row items-center md:justify-between h-full w-full pb-8 md:pb-0 gap-8 md:gap-16 text-primaryBlue relative overflow-hidden"
+	class="flex flex-col md:flex-row items-center md:justify-between h-full w-full pb-8 md:pb-0 gap-8 md:gap-16 text-primaryBlue relative"
 >
 	<div class="md:basis-1/3">
 		<h2 class="text-primaryBlue text-[40px] text-left">{m.contactWithUs()}:</h2>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="-z-10 absolute">
+	<div class="-z-10 absolute w-full h-full">
 		<Gradient />
 	</div>
 	<div class="md:basis-1/2 w-full">

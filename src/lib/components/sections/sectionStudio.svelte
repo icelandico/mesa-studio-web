@@ -5,9 +5,7 @@
 	import Gradient from '../icons/gradient.svelte';
 </script>
 
-<div
-	class="flex flex-col md:flex-row items-center justify-between h-full gap-16 relative overflow-hidden"
->
+<div class="flex flex-col md:flex-row items-center justify-between h-full gap-16 relative">
 	<div class="md:basis-2/4">
 		<p class="text-primaryBlue text-[26px] md:text-[40px] text-left">
 			<span>Marianna Matuszewska</span>
@@ -24,7 +22,7 @@
 			{subtitle}
 		</p>
 	</div>
-	<div class="-z-10 absolute">
+	<div class="-z-10 absolute w-full h-full">
 		<Gradient />
 	</div>
 	<div class="h-full">

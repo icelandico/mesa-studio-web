@@ -6,6 +6,10 @@
 	font-family: 'Noto Sans Variable', sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 .image-loading {
 	opacity: 0;
 	transform: translateY(45px);
