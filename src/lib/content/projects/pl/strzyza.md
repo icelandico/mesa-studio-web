@@ -1,9 +1,8 @@
 ---
 title: klinika medyczna
-projectMainImg: /assets/3.jpg
+projectMainImg: /assets/mesa_studio_gabinet1_1.webp
 gallery:
-  - /assets/5.jpg
-  - /assets/2.jpg
+  - /assets/mesa_studio_gabinet1_1.webp
 projectDescription: >-
   Lorem Ipsum jest po prostu tekstem zastępczym w przemyśle poligraficznym i
   składzie tekstu. Lorem Ipsum jest standardowym tekstem zastępczym w przemyśle

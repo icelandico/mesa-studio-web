@@ -1,9 +1,8 @@
 ---
 title: Strzyża
-projectMainImg: /assets/3.jpg
+projectMainImg: /assets/mesa_studio_gabinet1_1.webp
 gallery:
-  - /assets/5.jpg
-  - /assets/2.jpg
+  - /assets/mesa_studio_gabinet1_1.webp
 projectDescription: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
