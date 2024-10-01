@@ -64,7 +64,7 @@ collections:
         name: 'fotoGallery'
         widget: 'object'
         collapsed: true
-        i18n: duplicate
+        i18n: true
         fields:
-          - { label: 'Zdjęcie', name: 'galleryPhoto', widget: 'image' }
+          - { label: 'Zdjęcie', name: 'galleryPhoto', widget: 'image', i18n: duplicate }
           - { label: 'Podpis', name: 'caption', widget: 'string' }
