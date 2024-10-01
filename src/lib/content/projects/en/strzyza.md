@@ -2,8 +2,8 @@
 title: Strzyża
 projectMainImg: /assets/mesa_studio_gabinet1_3.webp
 gallery:
-  - /assets/mesa_studio_gabinet1_1.webp
   - /assets/mesa_studio_gabinet1_2.webp
+  - /assets/mesa_studio_gabinet1_1.webp
   - /assets/mesa_studio_gabinet1_3.webp
 projectDescription: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
