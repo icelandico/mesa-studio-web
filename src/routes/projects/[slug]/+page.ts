@@ -12,8 +12,8 @@ export const load = async ({ params, depends }) => {
 			projectMainImg: data.metadata.projectMainImg,
 			projectDescription: data.metadata.projectDescription,
 			gallery: data.metadata.gallery,
-			content: data.default,
-			meta: data.metadata
+			projectGallery: data.metadata.projectGallery,
+			content: data.default
 		};
 	} catch (e) {
 		throw error(404, `Could not find ${params.slug}`);

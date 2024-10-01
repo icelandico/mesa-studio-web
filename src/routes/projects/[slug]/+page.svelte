@@ -58,21 +58,22 @@
 <section class="flex flex-col justify-center pt-[80px] px-4 md:px-12 pb-12">
 	<img src={data.projectMainImg} class="object-cover calc-image" alt="mesa projekt" />
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12" id="images">
-		{#each data.gallery as image}
+		{#each data.projectGallery as image}
 			<a
-				href={image}
-				data-img={image}
-				data-thumb={image}
+				href={image.galleryPhoto}
+				data-img={image.galleryPhoto}
+				data-thumb={image.galleryPhoto}
 				data-alt="mesa studio projekt"
+				data-caption={image.caption}
 				class="project-img"
 			>
 				<img
 					class="aspect-square object-cover image-loading"
 					loading="eager"
-					use:lazyLoad={image}
+					use:lazyLoad={image.galleryPhoto}
 					use:loadImageSize
 					alt="projekt wnętrza"
-					src={image}
+					src={image.galleryPhoto}
 				/>
 			</a>
 		{/each}

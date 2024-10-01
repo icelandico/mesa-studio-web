@@ -11,20 +11,24 @@ export interface Project {
 	gallery: string[];
 	projectDescription: string;
 	slug: string;
+	projectGallery: Array<{
+		caption: string;
+		galleryPhoto: string;
+	}>;
 }
 
 export const projectsData = () => {
-	const projectsData = Object.entries(import.meta.glob<GlobEntry>('./../content/projects/**/*.md', { eager: true })).map(
-		([filepath, globEntry]) => {
-			const pathParts = filepath.split('/');
-			const fileLocale = pathParts[pathParts.length - 2];
+	const projectsData = Object.entries(
+		import.meta.glob<GlobEntry>('./../content/projects/**/*.md', { eager: true })
+	).map(([filepath, globEntry]) => {
+		const pathParts = filepath.split('/');
+		const fileLocale = pathParts[pathParts.length - 2];
 
-			return {
-				...globEntry.metadata,
-				locale: fileLocale,
-				slug: parse(filepath).name
-			};
-		}
-	);
+		return {
+			...globEntry.metadata,
+			locale: fileLocale,
+			slug: parse(filepath).name
+		};
+	});
 	return projectsData;
 };
