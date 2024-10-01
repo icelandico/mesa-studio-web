@@ -60,11 +60,7 @@ collections:
           media_library: { config: { multiple: true, max_files: 10 } }
         }
       - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
-      - { label: 'FOTO_2'
-          name: 'fotoGallery'
-          widget: 'object'
-          collapsed: true,
-          i18n: duplicate,
+      - { label: 'FOTO_2', name: 'fotoGallery', widget: 'object', collapsed: true, i18n: duplicate, 
           fields:
             - { label: 'Zdjęcie', name: 'galleryPhoto', widget: 'image' }
             - { label: 'Podpis', name: 'caption', widget: 'string' }
