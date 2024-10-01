@@ -9,17 +9,12 @@ gallery:
   - /assets/mesa_studio_apartament_szafarnia_kroniki_21_3000.jpg
   - /assets/mesa_studio_apartament_szafarnia_kroniki_24_3000.jpg
 projectDescription: >-
-  Lorem ipsum odor amet, consectetuer adipiscing elit. Pellentesque neque ut
-  magna; purus tempor diam tortor dapibus. Sit volutpat condimentum fringilla
-  mattis; aliquam turpis. Nec ridiculus magnis convallis potenti curae
-  sollicitudin posuere. Id imperdiet ut lacus ultricies; faucibus et. Auctor
-  proin curae ornare quis accumsan hendrerit dis. Quis primis magnis sed et hac
-  habitasse. Duis sollicitudin proin ex leo eget curae vestibulum habitasse. At
-  nam diam auctor malesuada cubilia habitasse arcu enim dictum.
+  "Motława" to projekt 80-cio metrowego apartamentu mieszczącego się w centrum
+  Gdańska, przeznaczonego na wynajem krótkoterminowy.
 
 
-  Turpis vehicula faucibus risus congue mi faucibus quisque maecenas. Cursus faucibus sit non sagittis placerat. Nullam amet sit posuere; sollicitudin ad nam vehicula. Viverra massa interdum semper habitant quis. Varius blandit morbi auctor proin urna. Proin suspendisse potenti euismod; per integer imperdiet molestie. Et vulputate scelerisque bibendum curabitur dapibus curabitur. Nullam porta per proin vehicula id.
+  Ze względu na lokalizację-okna wychodzące na Motławę i gdańską marinę, postanowiłyśmy zaprojektować tę przestrzeń nawiązując do tego, co ją otacza. Spojrzeć na nią jak na mieszkanie-jacht, wpuścić (wlać?) Zatokę Gdańską do wnętrza. Nie bazując wyłącznie na odnoszących się do Gdańska akcentach dekoracyjnych; w sposób mniej oczywisty, a nieco bardziej scenograficzny. Tak, aby goście apartamentu mogli doświadczyć go w sposób wielowymiarowy. Z tego względu postanowiłyśmy sufit w strefie wejścia wykończyć tapetą nawiązującą do tafli wody, jedną z sypialni doświetlić za pomocą okna-bulaja, a nad stołem zawiesić lampę wywołująca skojarzenie z żaglem. W salonie stworzyłyśmy podświetlaną zabudowę-instalację w kształcie fal, która największe wrażenie robi po zmroku. 
 
 
-  Quisque tristique turpis luctus malesuada nascetur ullamcorper donec taciti. Suscipit quisque litora sodales dapibus a est condimentum molestie facilisis. Conubia malesuada vivamus; fusce tempus augue mattis. Aptent ultrices enim neque, tempor tempor venenatis per. Facilisis justo libero dolor per malesuada. Hendrerit netus in tortor ipsum nullam cubilia. Suscipit tristique venenatis mus tincidunt integer euismod posuere vitae. Curabitur suspendisse bibendum ligula accumsan per. Lacinia faucibus imperdiet; eget convallis vehicula feugiat.
+  Ze względu na to, że mieszkanie było "z drugiego obiegu", zależało nam na wykorzystaniu elementów, które w nim zastałyśmy. Kierując się aspektem ekologicznym, jak i budżetowym, kuchenną zabudowę zaprojektowałyśmy tak, aby korespondowała z kamiennym blatem, który był elementem wcześniejszej aranżacji. Dopełniłyśmy go płytkami ze wzorem wywołujacym skojarzenie z pianą morską i otuliłyśmy wszechobecnymi odcieniami błękitu.
 ---
