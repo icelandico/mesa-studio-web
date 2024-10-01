@@ -67,4 +67,4 @@ collections:
         i18n: true
         fields:
           - { label: 'Zdjęcie', name: 'galleryPhoto', widget: 'image', i18n: duplicate }
-          - { label: 'Podpis', name: 'caption', widget: 'string' }
+          - { label: 'Podpis', name: 'caption', widget: 'string', required: false }
