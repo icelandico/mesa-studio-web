@@ -1,5 +1,5 @@
 ---
-title: Strzyża
+title: klinika medyczna
 projectMainImg: /assets/mesa_studio_gabinet1_3.webp
 gallery:
   - /assets/mesa_studio_gabinet1_2.webp
