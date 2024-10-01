@@ -15,4 +15,11 @@ projectDescription: >-
 
 
   Stał się popularny w latach 60. XX wieku wraz z wydaniem arkuszy Letraset zawierających fragmenty Lorem Ipsum, a ostatnio z oprogramowaniem do składu komputerowego, takim jak Aldus PageMaker, zawierającym wersje Lorem Ipsum.
+projectGallery:
+  - galleryPhoto: /assets/pexels-photo-346885.webp
+    caption: wow, what a story Mark
+  - galleryPhoto: /assets/pexels-wanderer-731217.jpg
+    caption: this is a dream
+  - galleryPhoto: /assets/pexels-nubikini-386009.jpg
+    caption: ale auto
 ---
