@@ -32,6 +32,27 @@
 			el: e.currentTarget
 		});
 	}
+
+	export function loadImageSize(node) {
+		const imageSrc = node.getAttribute('src');
+
+		const img = new Image();
+		img.src = imageSrc;
+
+		img.onload = () => {
+			const width = img.width;
+			const height = img.height;
+
+			if (node.parentElement) {
+				node.parentElement.setAttribute('data-width', width);
+				node.parentElement.setAttribute('data-height', height);
+			}
+		};
+
+		img.onerror = () => {
+			console.error('Failed to load image:', imageSrc);
+		};
+	}
 </script>
 
 <section class="flex flex-col justify-center pt-[80px] px-4 md:px-12 pb-12">
@@ -49,7 +70,9 @@
 					class="aspect-square object-cover image-loading"
 					loading="eager"
 					use:lazyLoad={image}
+					use:loadImageSize
 					alt="projekt wnętrza"
+					src={image}
 				/>
 			</a>
 		{/each}
