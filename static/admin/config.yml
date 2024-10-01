@@ -60,9 +60,9 @@ collections:
           media_library: { config: { multiple: true, max_files: 10 } }
         }
       - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
-      - label: 'FOTO_2'
-        name: 'fotoGallery'
-        widget: 'object'
+      - label: Galeria projektu
+        name: projectGallery
+        widget: list
         allow_add: true
         i18n: true
         fields:
