@@ -21,5 +21,5 @@ projectGallery:
   - galleryPhoto: /assets/pexels-wanderer-731217.jpg
     caption: this is a dream
   - galleryPhoto: /assets/pexels-nubikini-386009.jpg
-    caption: ale auto
+    caption: ""
 ---
