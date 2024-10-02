@@ -29,8 +29,8 @@
 	<nav
 		class="h-[80px] flex bg-white justify-center items-center px-4 text-xl text-light text-primaryBlue"
 	>
-		<div class="flex w-full justify-between">
-			<div><a class="w-full h-full" href="/"><MesaIcon /></a></div>
+		<div class="flex w-full justify-between items-center">
+			<div><a class="w-full h-full" href="/"><MesaIcon height={60} /></a></div>
 			<div
 				class="relative w-[40px] h-[26px] flex flex-col justify-between pointer z-50"
 				on:click={() => handleToggleMenu()}

@@ -8,7 +8,6 @@ type GlobEntry = {
 export interface Project {
 	title: string;
 	projectMainImg: string;
-	gallery: string[];
 	projectDescription: string;
 	slug: string;
 	projectGallery: Array<{

@@ -57,7 +57,6 @@ collections:
         allow_add: true
         i18n: true
         fields:
-          - { label: 'Zdjęcie', name: galleryPhoto, widget: 'image', i18n: duplicate }
+          - { label: 'Zdjęcie', name: galleryPhoto, widget: image, i18n: duplicate }
           - { label: 'Podpis', name: caption, widget: string, required: false }
       - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
-

@@ -11,7 +11,6 @@ export const load = async ({ params, depends }) => {
 			title: data.metadata.title,
 			projectMainImg: data.metadata.projectMainImg,
 			projectDescription: data.metadata.projectDescription,
-			gallery: data.metadata.gallery,
 			projectGallery: data.metadata.projectGallery,
 			content: data.default
 		};

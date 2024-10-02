@@ -104,7 +104,7 @@
 		>
 			<li class="flex-1">
 				<a
-					class="inline-block {activeSection === 'studio' ? 'active' : ''}"
+					class="inline-block navigation-item {activeSection === 'studio' ? 'active' : ''}"
 					href="#studio"
 					on:click|preventDefault={scrollIntoView}
 					aria-label="Mesa studio info">{m.studio()}</a
@@ -112,7 +112,8 @@
 			</li>
 			<li class="flex-1">
 				<a
-					class="inline {currentRoute.includes('/projects') || activeSection === 'projects'
+					class="navigation-item inline {currentRoute.includes('/projects') ||
+					activeSection === 'projects'
 						? 'active'
 						: ''}"
 					href="#projects"
@@ -120,25 +121,27 @@
 					aria-label="Mesa studio projects">{m.projects()}</a
 				>
 			</li>
-			<li class="cursor-pointer flex justify-center basis-6/12">
+			<li class="cursor-pointer flex justify-center basis-6/12 h-full">
 				<a
 					class="inline-block"
 					href={`/${languageTag() === 'pl' ? '' : 'en'}`}
 					on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}
 					aria-label="Mesa studio homepage"
 				>
-					<MesaIcon />
+					<MesaIcon height={80} />
 				</a>
 			</li>
 			<li class="flex-1 text-right">
 				<a
-					class="inline cursor-pointer {activeSection === 'contact' ? 'active' : ''}"
+					class="inline cursor-pointer navigation-item {activeSection === 'contact'
+						? 'active'
+						: ''}"
 					href="#contact"
 					on:click|preventDefault={scrollIntoView}
 					aria-label="Mesa studio contact">{m.contact()}</a
 				>
 			</li>
-			<li class="flex-1 text-right">
+			<li class="flex-1 text-right navigation-item">
 				<span class="inline-block cursor-pointer" on:click={handleLanguageSwitch}
 					>{languageTag() === 'en' ? 'pl' : 'en'}</span
 				>
@@ -163,5 +166,9 @@
 		font-size: 58px;
 		color: currentColor;
 		font-family: 'Playfair Display Variable', serif;
+	}
+
+	.navigation-item {
+		font-weight: 300;
 	}
 </style>
