@@ -8,6 +8,11 @@ gallery:
   - /assets/mesa_studio_apartament_szafarnia_kroniki_16_3000.jpg
   - /assets/mesa_studio_apartament_szafarnia_kroniki_21_3000.jpg
   - /assets/mesa_studio_apartament_szafarnia_kroniki_24_3000.jpg
+projectGallery:
+  - galleryPhoto: /assets/mesa_studio_motlawa_11.webp
+    caption: xyz test
+  - galleryPhoto: /assets/mesa_studio_gabinet1_1.webp
+    caption: hehehe kolejne zdjecie
 projectDescription: >-
   "Motława" to projekt 80-cio metrowego apartamentu mieszczącego się w centrum
   Gdańska, przeznaczonego na wynajem krótkoterminowy.
