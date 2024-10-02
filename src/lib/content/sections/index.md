@@ -9,6 +9,13 @@ en:
     - /assets/mesa_studio_motlawa_4.webp
     - /assets/mesa_studio_motlawa_27.webp
     - /assets/mesa_studio_motlawa_21.webp
+    - /assets/mesa_studio_motlawa_7.webp
+    - /assets/mesa_studio_motlawa_7.webp
+    - /assets/mesa_studio_motlawa_22.webp
+    - /assets/mesa_studio_motlawa_19.webp
+    - /assets/mesa_studio_motlawa_15.webp
+    - /assets/mesa_studio_motlawa_8.webp
+    - /assets/mesa_studio_motlawa_11.webp
 pl:
   studioSubtitle: Tworzymy indywidualne wnętrza, dopasowane do potrzeb klientów.
     Zależy nam na stworzeniu przestrzeni, która będzie dawała radość osobom z
@@ -18,5 +25,12 @@ pl:
     - /assets/mesa_studio_motlawa_4.webp
     - /assets/mesa_studio_motlawa_27.webp
     - /assets/mesa_studio_motlawa_21.webp
+    - /assets/mesa_studio_motlawa_7.webp
+    - /assets/mesa_studio_motlawa_7.webp
+    - /assets/mesa_studio_motlawa_22.webp
+    - /assets/mesa_studio_motlawa_19.webp
+    - /assets/mesa_studio_motlawa_15.webp
+    - /assets/mesa_studio_motlawa_8.webp
+    - /assets/mesa_studio_motlawa_11.webp
   studioImage: /assets/mesa_studio_onas.webp
 ---
