@@ -51,15 +51,6 @@ collections:
     fields:
       - { label: 'Projekt tytul', name: title, widget: string, i18n: true }
       - { label: 'Projekt Zdjecie', name: projectMainImg, widget: image, i18n: duplicate }
-      - {
-          name: gallery,
-          label: 'Projekty galeria',
-          widget: image,
-          choose_url: true,
-          required: false,
-          media_library: { config: { multiple: true, max_files: 10 } }
-        }
-      - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
       - label: Galeria projektu
         name: projectGallery
         widget: list
@@ -68,3 +59,5 @@ collections:
         fields:
           - { label: 'Zdjęcie', name: galleryPhoto, widget: 'image', i18n: duplicate }
           - { label: 'Podpis', name: caption, widget: string, required: false }
+      - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
+
