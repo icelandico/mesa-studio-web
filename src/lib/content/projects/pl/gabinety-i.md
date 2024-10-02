@@ -1,6 +1,6 @@
 ---
 title: Gabinety I
-projectMainImg: /assets/2-r.jpg
+projectMainImg: /assets/mesa_studio_gabinet1_1.webp
 gallery:
   - /assets/2-r.jpg
   - /assets/3-r.jpg

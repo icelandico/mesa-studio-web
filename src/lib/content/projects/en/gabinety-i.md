@@ -1,6 +1,6 @@
 ---
 title: Gabinety I
-projectMainImg: /assets/2-r.jpg
+projectMainImg: /assets/mesa_studio_gabinet1_1.webp
 gallery:
   - /assets/2-r.jpg
   - /assets/3-r.jpg
@@ -8,6 +8,9 @@ gallery:
   - /assets/4-wc.jpg
   - /assets/5-wc.jpg
   - /assets/6-g1.jpg
+projectGallery:
+  - galleryPhoto: /assets/mesa_studio_motlawa_4.webp
+  - galleryPhoto: /assets/mesa_studio_motlawa_19.webp
 projectDescription: >-
   Lorem ipsum odor amet, consectetuer adipiscing elit. Pellentesque neque ut
   magna; purus tempor diam tortor dapibus. Sit volutpat condimentum fringilla
