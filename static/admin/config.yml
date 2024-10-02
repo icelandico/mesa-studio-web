@@ -56,7 +56,7 @@ collections:
           label: 'Projekty galeria',
           widget: image,
           choose_url: true,
-          i18n: duplicate,
+          required: false,
           media_library: { config: { multiple: true, max_files: 10 } }
         }
       - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
