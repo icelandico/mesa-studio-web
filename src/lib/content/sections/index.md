@@ -10,7 +10,6 @@ en:
     - /assets/mesa_studio_motlawa_27.webp
     - /assets/mesa_studio_motlawa_21.webp
     - /assets/mesa_studio_motlawa_7.webp
-    - /assets/mesa_studio_motlawa_7.webp
     - /assets/mesa_studio_motlawa_22.webp
     - /assets/mesa_studio_motlawa_19.webp
     - /assets/mesa_studio_motlawa_15.webp
@@ -25,7 +24,6 @@ pl:
     - /assets/mesa_studio_motlawa_4.webp
     - /assets/mesa_studio_motlawa_27.webp
     - /assets/mesa_studio_motlawa_21.webp
-    - /assets/mesa_studio_motlawa_7.webp
     - /assets/mesa_studio_motlawa_7.webp
     - /assets/mesa_studio_motlawa_22.webp
     - /assets/mesa_studio_motlawa_19.webp
