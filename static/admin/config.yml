@@ -60,3 +60,11 @@ collections:
           - { label: 'Zdjęcie', name: galleryPhoto, widget: image, i18n: duplicate }
           - { label: 'Podpis', name: caption, widget: string, required: false }
       - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true, required: false }
+      - label: 'Data dodania'
+        name: 'addDate'
+        widget: 'datetime'
+        default: '{{now}}'
+        date_format: 'DD.MM.YYYY' # e.g. 24.12.2021
+        time_format: 'HH:mm' # e.g. 21:07
+        format: 'LLL'
+        picker_utc: false
