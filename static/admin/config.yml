@@ -59,4 +59,4 @@ collections:
         fields:
           - { label: 'Zdjęcie', name: galleryPhoto, widget: image, i18n: duplicate }
           - { label: 'Podpis', name: caption, widget: string, required: false }
-      - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true }
+      - { label: 'Opis', name: projectDescription, widget: markdown, i18n: true, required: false }
