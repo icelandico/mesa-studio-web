@@ -18,4 +18,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_gabinet1_10.webp
   - galleryPhoto: /assets/mesa_studio_gabinet1_11.webp
 projectDescription: ""
+addDate: September 21, 2024 4:07 PM
 ---
