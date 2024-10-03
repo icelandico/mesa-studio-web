@@ -14,4 +14,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_klinikaii_3.webp
   - galleryPhoto: /assets/mesa_studio_klinikaii_4.webp
 projectDescription: ""
+addDate: September 30, 2024 4:06 PM
 ---
