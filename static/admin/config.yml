@@ -68,3 +68,4 @@ collections:
         time_format: 'HH:mm' # e.g. 21:07
         format: 'LLL'
         picker_utc: false
+        i18n: duplicate
