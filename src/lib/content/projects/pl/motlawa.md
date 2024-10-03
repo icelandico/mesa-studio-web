@@ -14,4 +14,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_paradyz_5.webp
   - galleryPhoto: /assets/mesa_studio_paradyz_2.webp
 projectDescription: Projekt konkursowy "Paradyż Designers 2024".
+addDate: September 22, 2024 4:07 PM
 ---
