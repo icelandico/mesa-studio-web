@@ -14,6 +14,7 @@ export interface Project {
 		caption: string;
 		galleryPhoto: string;
 	}>;
+	addDate: string;
 }
 
 export const projectsData = () => {

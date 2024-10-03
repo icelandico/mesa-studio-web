@@ -10,7 +10,9 @@
 	export let data;
 	const lang = languageTag();
 	const indexData = data.homePageData[0][lang];
-	const projectsData = data.projectsPageData.filter((el) => el.locale === languageTag());
+	const projectsData = data.projectsPageData
+		.filter((el) => el.locale === languageTag())
+		.sort((a, b) => (new Date(a.addDate) < new Date(b.addDate) ? 1 : -1));
 </script>
 
 <section
