@@ -1,5 +1,5 @@
 ---
-title: klinika medyczna
+title: klinika medyczna I
 projectMainImg: /assets/mesa_studio_gabinet1_3.webp
 gallery:
   - /assets/mesa_studio_gabinet1_2.webp
