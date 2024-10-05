@@ -11,7 +11,7 @@
 		<div class="project-container cursor-pointer">
 			<a class="block w-full h-full" href={`projects/${project.slug}`}>
 				<img
-					class="aspect-square object-cover image-loading"
+					class="w-full h-full aspect-square object-cover image-loading"
 					use:lazyLoad={project.projectMainImg}
 					alt="projekt wnętrza"
 					loading="eager"
