@@ -27,7 +27,12 @@
 	bind:clientHeight
 	class="box-border px-4 md:px-12 mt-12 md:pt-[80px] md:h-screen flex items-center justify-center"
 >
-	<SectionStudio subtitle={indexData.studioSubtitle} photo={indexData.studioImage} />
+	<SectionStudio
+		subtitleOne={indexData.studioSubtitleOne}
+		subtitleTwo={indexData.studioSubtitleTwo}
+		subtitleThree={indexData.studioSubtitleThree}
+		photo={indexData.studioImage}
+	/>
 </section>
 <section id="projects" class="box-border px-4 md:px-12 pt-[80px]">
 	<SectionProjects projects={projectsData} />

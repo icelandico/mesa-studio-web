@@ -1,7 +1,9 @@
 import { parse } from 'path';
 
 export interface HomePage {
-	studioSubtitle: string;
+	studioSubtitleOne: string;
+	studioSubtitleTwo: string;
+	studioSubtitleThree: string;
 	studioImage: string;
 	gallery: string[];
 }
