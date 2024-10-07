@@ -10,7 +10,7 @@
 
 <div class="flex flex-col md:flex-row items-center justify-between h-full gap-16 relative">
 	<div class="md:basis-2/4">
-		<p class="text-primaryBlue text-[26px] md:text-[40px] text-left">
+		<p class="text-primaryBlue text-[26px] md:text-[34px] text-left">
 			{subtitleOne}
 		</p>
 		<p class="text-primaryBlue text-2xl mt-16">
