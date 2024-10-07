@@ -20,5 +20,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_moon_17.webp
   - galleryPhoto: /assets/mesa_studio_moon_16.webp
   - galleryPhoto: /assets/mesa_studio_moon_18.webp
-addDate: October 7, 2024 7:15 PM
+addDate: October 1, 2024 7:15 PM
 ---
