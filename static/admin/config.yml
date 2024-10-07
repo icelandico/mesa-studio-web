@@ -32,7 +32,9 @@ collections:
         file: 'src/lib/content/sections/index.md'
         i18n: true
         fields:
-          - { label: 'Studio podtytul', name: studioSubtitle, widget: string, i18n: true }
+          - { label: 'Studio podtytul_1', name: studioSubtitleOne, widget: string, i18n: true }
+          - { label: 'Studio podtytul_2', name: studioSubtitleTwo, widget: string, i18n: true }
+          - { label: 'Studio podtytul_3', name: studioSubtitleThree, widget: string, i18n: true }
           - { label: 'Studio zdjecie', name: studioImage, widget: image, i18n: duplicate }
           - {
               name: gallery,
