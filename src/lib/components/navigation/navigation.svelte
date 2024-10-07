@@ -118,8 +118,9 @@
 						: ''}"
 					href="#projects"
 					on:click|preventDefault={scrollIntoView}
-					aria-label="Mesa studio projects">{m.projects()}</a
-				>
+					aria-label="Mesa studio projects">
+					{m.projects()}
+					</a>
 			</li>
 			<li class="cursor-pointer flex justify-center basis-6/12 h-full">
 				<a
@@ -138,8 +139,10 @@
 						: ''}"
 					href="#contact"
 					on:click|preventDefault={scrollIntoView}
-					aria-label="Mesa studio contact">{m.contact()}</a
+					aria-label="Mesa studio contact"
 				>
+					{m.contact()}
+				</a>
 			</li>
 			<li class="flex-1 text-right navigation-item">
 				<span class="inline-block cursor-pointer" on:click={handleLanguageSwitch}

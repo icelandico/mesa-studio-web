@@ -5,6 +5,7 @@
 	import { languageTag } from '$lib/paraglide/runtime.js';
 	import { i18n } from '$lib/i18n';
 	import { get } from 'svelte/store';
+	import * as m from '$lib/paraglide/messages.js';
 
 	let open = false;
 	let currentRoute = '';
@@ -69,14 +70,14 @@
 					<a
 						class="text-4xl inline-block"
 						href="#projects"
-						on:click={() => handleToggleMenu('/#projects')}>projekty</a
+						on:click={() => handleToggleMenu('/#projects')}>{m.projects()}</a
 					>
 				</li>
 				<li>
 					<a
 						class="text-4xl inline-block cursor-pointer"
 						href="#contact"
-						on:click={() => handleToggleMenu('/#contact')}>kontakt</a
+						on:click={() => handleToggleMenu('/#contact')}>{m.contact()}</a
 					>
 				</li>
 				<li class="text-4xl cursor-pointer text-right">
