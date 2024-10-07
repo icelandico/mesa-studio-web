@@ -1,6 +1,6 @@
 ---
 title: rumia, 90m2
-projectMainImg: /assets/mesa_studio_rumia_3.webp
+projectMainImg: /assets/mesa_studio_rumia_8.webp
 projectGallery:
   - galleryPhoto: /assets/mesa_studio_rumia_1.webp
   - galleryPhoto: /assets/mesa_studio_rumia_2.webp
