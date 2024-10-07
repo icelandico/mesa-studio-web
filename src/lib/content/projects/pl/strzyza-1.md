@@ -1,5 +1,5 @@
 ---
-title: Strzyża
+title: strzyża
 projectMainImg: /assets/mesa_studio_strzyza_7.webp
 projectGallery:
   - galleryPhoto: /assets/mesa_studio_strzyza_1.webp
