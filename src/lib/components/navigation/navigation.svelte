@@ -125,8 +125,8 @@
 			<li class="cursor-pointer flex justify-center basis-6/12 h-full">
 				<a
 					class="inline-block"
-					href={`/${languageTag() === 'pl' ? '' : 'en'}`}
-					on:click={() => goto(`/${languageTag() === 'pl' ? '' : 'en'}`)}
+					href={`/`}
+					on:click={() => goto(`/`)}
 					aria-label="Mesa studio homepage"
 				>
 					<MesaIcon height={80} />
