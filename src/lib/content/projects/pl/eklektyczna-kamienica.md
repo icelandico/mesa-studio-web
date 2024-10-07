@@ -18,5 +18,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_kolor1_14.webp
   - galleryPhoto: /assets/mesa_studio_kolor1_15.webp
   - galleryPhoto: /assets/mesa_studio_kolor1_16.webp
-addDate: October 2, 2024 4:06 PM
+addDate: October 1, 2024 4:06 PM
 ---
