@@ -6,5 +6,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_zacheta_2.webp
   - galleryPhoto: /assets/mesa_studio_zacheta_3.webp
   - galleryPhoto: /assets/mesa_studio_zacheta_4.webp
-addDate: October 1, 2024 8:49 PM
+addDate: October 2, 2024 8:49 PM
 ---
