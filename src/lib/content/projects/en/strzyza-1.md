@@ -11,5 +11,5 @@ projectGallery:
   - galleryPhoto: /assets/mesa_studio_strzyza_7.webp
   - galleryPhoto: /assets/mesa_studio_strzyza_8.webp
   - galleryPhoto: /assets/mesa_studio_strzyza_9.webp
-addDate: October 2, 2024 10:39 PM
+addDate: October 2, 2024 6:41 PM
 ---
