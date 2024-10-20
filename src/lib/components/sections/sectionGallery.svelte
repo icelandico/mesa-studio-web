@@ -22,7 +22,7 @@
 	<div class="embla w-full h-full">
 		<div class="embla__viewport h-full" use:emblaCarouselSvelte on:emblaInit={onInit}>
 			<div class="embla__container h-full">
-				{#each galleryPhotos as photo}
+				{#each galleryPhotos as photo, index}
 					<div class="embla__slide">
 						<img
 							class="w-full h-full object-cover gallery-img"
@@ -30,6 +30,8 @@
 							alt="mesa studio galeria"
 							title="mesa studio interior design"
 							loading="eager"
+							use:lazyLoad={photo}
+							fetchpriority={index < 4 ? 'high' : 'low'}
 							srcset="
 								{photo} 256×384,
 								{photo} 710×1065,
