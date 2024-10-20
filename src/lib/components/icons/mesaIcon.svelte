@@ -1,5 +1,5 @@
 <script>
-	export let width = 120;
+	export const width = 120;
 	export let height;
 </script>
 

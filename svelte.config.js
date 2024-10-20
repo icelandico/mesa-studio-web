@@ -20,6 +20,10 @@ const config = {
 			handleMissingId: 'ignore',
 			handleHttpError: 'warn'
 		},
+		paths: {
+			relative: false
+		},
+		inlineStyleThreshold: Infinity,
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',

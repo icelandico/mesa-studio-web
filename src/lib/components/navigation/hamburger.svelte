@@ -91,36 +91,6 @@
 </header>
 
 <style>
-	.close-icon {
-		position: absolute;
-		width: 50px;
-		height: 50px;
-		cursor: pointer;
-		z-index: 999;
-		right: 10px;
-		top: 10px;
-	}
-
-	.close-icon::before,
-	.close-icon::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 45px;
-		height: 5px;
-		background-color: black;
-		transform-origin: center;
-		border-radius: 5px;
-	}
-
-	.close-icon::before {
-		transform: translate(-50%, -50%) rotate(45deg);
-	}
-
-	.close-icon::after {
-		transform: translate(-50%, -50%) rotate(-45deg);
-	}
 
 	.active-1 {
 		transform: translateY(11px) rotate(45deg);
