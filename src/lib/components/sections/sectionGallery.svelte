@@ -56,9 +56,9 @@
 
 <style>
 
-	/* .gallery-img {
+	.gallery-img {
 		aspect-ratio: 2/3;
-	} */
+	}
 	.embla {
 		overflow: hidden;
 	}
