@@ -2,7 +2,6 @@
 	import { lazyLoad } from '$lib/utils/lazyLoad';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import type { EmblaCarouselType } from 'embla-carousel';
-	import Image from '$lib/components/image/image.svelte';
 	let emblaApi: EmblaCarouselType;
 	export let galleryPhotos;
 
@@ -25,19 +24,25 @@
 			<div class="embla__container h-full">
 				{#each galleryPhotos as photo}
 					<div class="embla__slide">
-						<!-- <Image 
-							image={photo} 
-							alt="mesa studio galeria" 
-							title="mesa studio interior design"
-							className="w-full h-full"
-						/> -->
 						<img
-						class="w-full h-full object-cover image-loading"
-						use:lazyLoad={photo}
-						alt="mesa studio galeria"
-						title="mesa studio interior design"
-						loading="eager"
-					/>
+							class="w-full h-full object-cover gallery-img"
+							src={photo}
+							alt="mesa studio galeria"
+							title="mesa studio interior design"
+							loading="eager"
+							srcset="
+								{photo} 256×384,
+								{photo} 710×1065,
+								{photo} 970×1455,
+								{photo} 1170×1755,
+								{photo} 1350×2025,
+								{photo} 1500×2250,
+								{photo} 1650×2475,
+								{photo} 1780×2670,
+								{photo} 1910×2865
+							"
+							sizes="(min-width: 780px) calc(33.33vw - 43px), calc(100vw - 32px)"
+						/>
 					</div>
 				{/each}
 			</div>
@@ -50,6 +55,10 @@
 </div>
 
 <style>
+
+	/* .gallery-img {
+		aspect-ratio: 2/3;
+	} */
 	.embla {
 		overflow: hidden;
 	}
