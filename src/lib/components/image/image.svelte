@@ -2,11 +2,21 @@
 	export let image;
 	export let alt;
 	export let sizes = '';
-	export let loading = 'lazy';
+	export let loading: 'lazy' | 'eager' | null | undefined = 'lazy';
 	export let title = '';
 	export let className = '';
 
-	async function importImage(image: string) {
+	type ImageSource = {
+		sources: {
+			avif: string;
+			webp: string;
+		};
+		img: {
+			src: string;
+		};
+	};
+
+	async function importImage(image: string): Promise<ImageSource | any> {
 		const pictures = import.meta.glob(`../../../../static/assets/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}`, {
 			import: 'default',
 			query: {
@@ -20,19 +30,26 @@
 				}
 			}
 	}
+
+	function handleImageLoad(event: Event) {
+		const img = event.target as HTMLImageElement;
+		img.style.opacity = '1';
+	}
 </script>
 
 <picture>
 	{#await importImage(image) then src}
+	{#if src}
 			<source srcset={src.sources.avif} type="image/avif" {sizes} />
 			<source srcset={src.sources.webp} type="image/webp" {sizes} />
 			<img
 				src={src.img.src}
 				{alt}
 				{loading}
-				onload="this.style.opacity=1"
+				on:load={handleImageLoad}
 				class={className}
 			/>
+		{/if}
 	{/await}
 </picture>
 
