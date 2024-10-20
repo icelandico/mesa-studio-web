@@ -24,10 +24,11 @@
 		<Gradient />
 	</div>
 	<div class="h-full">
-		<Image
+		<!-- <Image
 			image={photo}
 			alt="mesa studio team"
 			className="h-full object-cover w-full"
-		/>
+		/> -->
+		<img class="h-full object-cover w-full" alt="Mesa studio team" src={photo} />
 	</div>
 </div>

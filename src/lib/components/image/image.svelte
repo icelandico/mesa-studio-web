@@ -16,29 +16,29 @@
 		};
 	};
 
-	async function importImage(image: string): Promise<ImageSource | any> {
-		const pictures = import.meta.glob(`../../../../static/assets/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}`, {
-			import: 'default',
-			query: {
-					enhanced: true,
-					w: '2400;2000;1600;1200;800;400'
-			}
-		});
-			for (const [path, src] of Object.entries(pictures)) {
-				if (path.includes(image)) {
-						return await src();
-				}
-			}
-	}
+	// async function importImage(image: string): Promise<ImageSource | any> {
+	// 	const pictures = import.meta.glob(`../../../../static/assets/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}`, {
+	// 		import: 'default',
+	// 		query: {
+	// 				enhanced: true,
+	// 				w: '2400;2000;1600;1200;800;400'
+	// 		}
+	// 	});
+	// 		for (const [path, src] of Object.entries(pictures)) {
+	// 			if (path.includes(image)) {
+	// 					return await src();
+	// 			}
+	// 		}
+	// }
 
-	function handleImageLoad(event: Event) {
-		const img = event.target as HTMLImageElement;
-		img.style.opacity = '1';
-	}
+	// function handleImageLoad(event: Event) {
+	// 	const img = event.target as HTMLImageElement;
+	// 	img.style.opacity = '1';
+	// }
 </script>
 
 <picture>
-	{#await importImage(image) then src}
+	<!-- {#await importImage(image) then src}
 	{#if src}
 			<source srcset={src.sources.avif} type="image/avif" {sizes} />
 			<source srcset={src.sources.webp} type="image/webp" {sizes} />
@@ -51,7 +51,7 @@
 				{title}
 			/>
 		{/if}
-	{/await}
+	{/await} -->
 </picture>
 
 <style>

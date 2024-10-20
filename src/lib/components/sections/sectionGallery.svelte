@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { lazyLoad } from '$lib/utils/lazyLoad';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import type { EmblaCarouselType } from 'embla-carousel';
 	import Image from '$lib/components/image/image.svelte';
@@ -24,12 +25,19 @@
 			<div class="embla__container h-full">
 				{#each galleryPhotos as photo}
 					<div class="embla__slide">
-						<Image 
+						<!-- <Image 
 							image={photo} 
 							alt="mesa studio galeria" 
 							title="mesa studio interior design"
 							className="w-full h-full"
-						/>
+						/> -->
+						<img
+						class="w-full h-full object-cover image-loading"
+						use:lazyLoad={photo}
+						alt="mesa studio galeria"
+						title="mesa studio interior design"
+						loading="eager"
+					/>
 					</div>
 				{/each}
 			</div>
