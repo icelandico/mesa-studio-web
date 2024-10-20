@@ -48,6 +48,7 @@
 				{loading}
 				on:load={handleImageLoad}
 				class={className}
+				{title}
 			/>
 		{/if}
 	{/await}
