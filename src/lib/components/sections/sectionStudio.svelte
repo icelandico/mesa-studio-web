@@ -4,8 +4,8 @@
 	export let subtitleThree: string;
 
 	export let photo: string;
-	import * as m from '$lib/paraglide/messages.js';
 	import Gradient from '../icons/gradient.svelte';
+	import Image from '../image/image.svelte';
 </script>
 
 <div class="flex flex-col md:flex-row items-center justify-between h-full gap-16 relative">
@@ -24,6 +24,10 @@
 		<Gradient />
 	</div>
 	<div class="h-full">
-		<img class="h-full object-cover w-full" alt="Mesa studio team" src={photo} />
+		<Image
+			image={photo}
+			alt="mesa studio team"
+			className="h-full object-cover w-full"
+		/>
 	</div>
 </div>
