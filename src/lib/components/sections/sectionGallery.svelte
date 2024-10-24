@@ -43,11 +43,11 @@
 								sizes="(min-width: 780px) calc(33.33vw - 43px), calc(100vw - 32px)"
 							/>
 							<img
-									class="w-full h-full object-cover gallery-img"
-									src={photo}
-									alt="mesa studio galeria"
-									loading={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
-									fetchpriority={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
+								class="w-full h-full object-cover gallery-img"
+								src={photo}
+								alt="mesa studio galeria"
+								loading={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
+								fetchpriority={index === 0 ? "high" : 'auto'}
 							/>
 					</picture>
 					</div>
