@@ -47,7 +47,7 @@
 								src={photo}
 								alt="mesa studio galeria"
 								loading={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
-								fetchpriority={index === 0 ? "high" : 'auto'}
+								fetchpriority={windowWidth <= 768 ? index === 0 ? 'high' : 'auto' : index < 3 ? 'high' : 'auto'}
 							/>
 					</picture>
 					</div>
