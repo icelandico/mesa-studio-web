@@ -8,5 +8,5 @@
 	<meta property="og:title" content={m.metaTitle()} />
 	<meta property="og:description" content={m.metaDescription()} />
 	<link rel="canonical" href="https://mesa-studio.pl" />
-	<link rel="preload" fetchpriority="high" as="image" href="/assets/mesa_studio_motlawa_4.webp" type="image/webp">
+	<link rel="preload" as="image" href="/assets/mesa_studio_motlawa_4.webp" type="image/webp">
 </svelte:head>
