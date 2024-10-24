@@ -31,7 +31,7 @@
 							src={photo}
 							alt="mesa studio galeria"
 							title="mesa studio interior design"
-							loading={windowWidth <= 768 ? index === 1 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
+							loading={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
 							srcset="
 								{photo} 256×384,
 								{photo} 710×1065,
