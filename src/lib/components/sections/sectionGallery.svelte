@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { lazyLoad } from '$lib/utils/lazyLoad';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import type { EmblaCarouselType } from 'embla-carousel';
 	let emblaApi: EmblaCarouselType;
 	export let galleryPhotos;
 
+	let windowWidth: number;
 	function onInit(event: CustomEvent<EmblaCarouselType>) {
 		emblaApi = event.detail;
 	}
@@ -18,6 +18,8 @@
 	}
 </script>
 
+<svelte:window bind:innerWidth={windowWidth}/>
+
 <div class="flex items-center justify-between w-full h-full">
 	<div class="embla w-full h-full">
 		<div class="embla__viewport h-full" use:emblaCarouselSvelte on:emblaInit={onInit}>
@@ -29,9 +31,7 @@
 							src={photo}
 							alt="mesa studio galeria"
 							title="mesa studio interior design"
-							loading="eager"
-							use:lazyLoad={photo}
-							fetchpriority={index < 4 ? 'high' : 'low'}
+							loading={windowWidth <= 768 ? index === 1 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
 							srcset="
 								{photo} 256×384,
 								{photo} 710×1065,
