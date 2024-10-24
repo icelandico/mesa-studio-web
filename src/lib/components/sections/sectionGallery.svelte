@@ -26,25 +26,30 @@
 			<div class="embla__container h-full">
 				{#each galleryPhotos as photo, index}
 					<div class="embla__slide">
-						<img
-							class="w-full h-full object-cover gallery-img"
-							src={photo}
-							alt="mesa studio galeria"
-							title="mesa studio interior design"
-							loading={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
-							srcset="
-								{photo} 256×384,
-								{photo} 710×1065,
-								{photo} 970×1455,
-								{photo} 1170×1755,
-								{photo} 1350×2025,
-								{photo} 1500×2250,
-								{photo} 1650×2475,
-								{photo} 1780×2670,
-								{photo} 1910×2865
-							"
-							sizes="(min-width: 780px) calc(33.33vw - 43px), calc(100vw - 32px)"
-						/>
+						<picture>
+							<source
+								type="image/webp"
+								srcset="
+									{photo} 256×384,
+									{photo} 710×1065,
+									{photo} 970×1455,
+									{photo} 1170×1755,
+									{photo} 1350×2025,
+									{photo} 1500×2250,
+									{photo} 1650×2475,
+									{photo} 1780×2670,
+									{photo} 1910×2865
+								"
+								sizes="(min-width: 780px) calc(33.33vw - 43px), calc(100vw - 32px)"
+							/>
+							<img
+									class="w-full h-full object-cover gallery-img"
+									src={photo}
+									alt="mesa studio galeria"
+									loading={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
+									fetchpriority={windowWidth <= 768 ? index === 0 ? 'eager' : 'lazy' : index < 3 ? 'eager' : 'lazy'}
+							/>
+					</picture>
 					</div>
 				{/each}
 			</div>
