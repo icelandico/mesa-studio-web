@@ -173,5 +173,6 @@
 
 	.navigation-item {
 		font-weight: 300;
+		display: inline-block;
 	}
 </style>
